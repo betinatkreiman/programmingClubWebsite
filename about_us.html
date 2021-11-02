@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+
+  <!-- Bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- CSS link  --> 
+    <link rel="stylesheet" href="about.css">
+
+  <!--Bootstrap icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+</head>
+<body>
+  <!--Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light pl-5">
+    <a class="navbar-brand p-5 pt-3 pb-3" href="index.html">Newton North Programming Club</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--Different Tabs-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="resources.html"> Resources </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="archive.html"> Archive </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html"> FAQ </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fundraising.html">Fundraising </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="about_us.html"> About Us </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Begin content-->
+
+  <div class="c_heading">
+    <h1 class="h1 text-center p-3">Meet the Team!</h1>
+  </div>
+
+  <div class = "contact_info text-center row pt-5">
+
+  <!--Club Officer Template-->
+
+  <div id="ShowOfficer" class="modal">
+    <div class="modal-content">  
+      <div>
+        <img 
+          id="ShowOfficer_ID"
+          class = "headshot modal_headshot img-fluid image" 
+          src="#" 
+          alt="#">
+        <div>
+          <div>
+            <span id="CloseOfficer" class="close">&times;</span>
+          </div>
+          <div class="officer_text">
+            <h1 class="h1 modal_name"id="ShowOfficer_Name">Name</h1>
+            <p class="o_text" id="ShowOfficer_Text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, delectus quod. Quae, placeat nostrum officiis quaerat molestias quidem asperiores nihil! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla cumque eligendi veritatis, placeat autem, accusantium in molestiae assumenda, nemo ab qui nesciunt. Ipsum, libero aspernatur. Laborum nam odio fuga suscipit quia ab velit, corrupti quaerat architecto dolore obcaecati doloremque eaque?
+          </div>
+          </p>
+        </div>
+      </div>    
+    </div>
+  </div>
+
+  <!--Betina--> 
+  <div class="container col-xs-12 col-md-6 col-lg-3">
+    <!--overlay hover-->
+    
+    <div class="container container1" onclick="showOfficer(0)">
+      <img 
+        id="off0"
+        class = "headshots rounded-circle img-fluid image" 
+        src="headshots/betski.jpg" 
+        alt="Betina Kreiman">
+      <div class="overlay">
+        <div class="text">Betina Kreiman</div>
+      </div>
+    </div>
+    <!--Betina Contact-->
+      <p class="names" >Betina Kreiman</p>
+      <div class="social_icon"> 
+        <a href="https://www.instagram.com/betinakreiman/">
+          <i class="bi bi-instagram fa-2x p-1"></i>
+        </a> 
+        <a href="https://www.facebook.com/profile.php?id=100007180668610">
+          <i class="bi bi-facebook p-1"></i>
+        </a>
+        <a href="mailto:betina1620@gmail.com">
+          <i class="bi bi-envelope p-1"></i>
+        </a>
+        <a href="sms:+1(617)806-6503">
+          <i class="bi bi-chat-text-fill p-1"></i>
+        </a>
+    </div>
+  </div>
+  
+  <!--Jennifer-->
+  <div class="container col-xs-12 col-md-6 col-lg-3">
+    <!--overlay hover-->
+    <div class="container container1"  onclick="showOfficer(1)">
+      <img 
+        id="off1"
+        class = "headshots rounded-circle img-fluid image" 
+        src="headshots/jennifer.jpg" 
+        alt="Jennifer Li">
+      <div class="overlay">
+        <div class="text">Jennifer Li</div>
+      </div>
+    </div>
+    
+    <!--Jen Contact-->
+    <p class="names">Jennifer Li</p>
+    <div class="social_icon">
+      <a href="https://www.instagram.com/jennifer.yli/?hl=en">
+        <i class="bi bi-instagram fa-2x p-1"></i>
+      </a> 
+      <a href="mailto:jennifer.yuzhen.li@gmail.com">
+        <i class="bi bi-envelope p-1"></i>
+      </a> 
+      <a href="sms:+(1617)631-0590">
+        <i class="bi bi-chat-text-fill p-1"></i>
+      </a>
+    </div>
+  </div>
+
+  <!--Angela-->
+  <div class="container col-xs-12 col-md-6 col-lg-3">
+    
+    <div id="a_btn " onclick="showOfficer(2)">
+      <div class="container container1">
+        <img 
+          id="off2"
+          class = "headshots rounded-circle img-fluid image" 
+          src="headshots/angelaTwo.jpeg" 
+          alt="Angela Bai">
+        <!--Overlay Hover-->
+        <div class="overlay">
+          <div class="text">Angela Bai</div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Angela Contact-->
+    <p class="names" > Angela Bai</p>
+    <div class="social_icon">
+      <a href="https://www.instagram.com/nnhsprogramming/?hl=en">
+        <i class="bi bi-instagram fa-2x p-1"></i>
+      </a> 
+      <a href="https://www.facebook.com/groups/293459344434857/">
+        <i class="bi bi-facebook p-1"></i>
+      </a>
+      <a href="mailto:angela.l.bai@gmail.com">
+        <i class="bi bi-envelope p-1"></i>
+      </a>
+      <a href="sms:+(1617)893-3235">
+        <i class="bi bi-chat-text-fill p-1"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <!--Mr. P-->
+  <div class=" container col-xs-12 col-md-6 col-lg-3">
+    <!--overlay hover-->
+    <div class="container container1" onclick="showOfficer(3)">
+      <img 
+        id="off3"
+        class = "headshots rounded-circle img-fluid image" 
+        src="headshots/adam.jpg" 
+        alt="Mr.Peloquin">
+      <div class="overlay">
+        <div class="text">Mr.Peloquin</div>
+      </div>
+    </div>
+    <p class="names" >Mr.Peloquin</p>
+    <div class="social_icon">
+      <a href="mailto:peloquina@newton.k12.ma.us">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>     
+  </div>
+
+
+  <!--Club Members-->
+  <div >
+    <h1 class="h1 text-center pt-5">Club Members</h1>
+  </div>
+      
+  <!-- Modal Member Template -->
+  <div id="ShowMember" class="modal">
+    <div class="modal-content m_modal">  
+      <!-- <img 
+          id="ShowOfficer_ID"
+          class = "headshot modal_headshot img-fluid image" 
+          src="#" 
+          alt=""> -->
+      <div class="m_close">
+        <span id="CloseMember" class="close">&times;</span>
+      </div>
+      <div class="member_text">
+        <h1 id="ShowMember_Name" class="m_name flex-1">Name</h1>
+        <p id="ShowMember_Text" class= "float-right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, delectus quod. Quae, placeat nostrum officiis quaerat molestias quidem asperiores nihil! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla cumque eligendi veritatis, placeat autem, accusantium in molestiae assumenda, nemo ab qui nesciunt. Ipsum, libero aspernatur. Laborum nam odio fuga suscipit quia ab velit, corrupti quaerat architecto dolore obcaecati doloremque eaque?
+        </p>    
+      </div> 
+    </div>
+  </div>
+
+  <!--Member Buttons-->
+  <div class="buttonsForPeople text-center pt-4 pb-5">
+    <button id="btn0" type="button" class="btn btn-outline-secondary" onclick="showMember(0)">Ria Chudasama</button>
+    <button id="btn1" type="button" class="btn btn-outline-secondary" onclick="showMember(1)">Linda Xue</button>
+    <button id="btn2" type="button" class="btn btn-outline-secondary" onclick="showMember(2)">Ewan McPhail</button>
+    <button id="btn3" type="button" class="btn btn-outline-secondary" onclick="showMember(3)">Maxim Malkevich</button>
+    <button id="btn4" type="button" class="btn btn-outline-secondary" onclick="showMember(4)">Lily Tjia</button>
+    <button id="btn5" type="button" class="btn btn-outline-secondary" onclick="showMember(5)">Dan Wong</button>
+    <button id="btn6" type="button" class="btn btn-outline-secondary" onclick="showMember(6)">Jess Rigoli</button>
+    <button id="btn7" type="button" class="btn btn-outline-secondary" onclick="showMember(7)">Adam Kleber</button>
+    <button id="btn8" type="button" class="btn btn-outline-secondary" onclick="showMember(8)">Name</button>
+    <button id="btn9" type="button" class="btn btn-outline-secondary" onclick="showMember(9)">Name</button>
+    <button id="btn10" type="button" class="btn btn-outline-secondary" onclick="showMember(10)">Name</button>
+    <button id="btn11" type="button" class="btn btn-outline-secondary" onclick="showMember(11)">Name</button>
+    <button id="btn12" type="button" class="btn btn-outline-secondary" onclick="showMember(12)">Name</button>
+    <button id="btn13" type="button" class="btn btn-outline-secondary" onclick="showMember(13)">Name</button>
+    <button id="btn14" type="button" class="btn btn-outline-secondary" onclick="showMember(14)">Name</button>
+    <button id="btn15" type="button" class="btn btn-outline-secondary" onclick="showMember(15)">Name</button>
+    <button id="btn16" type="button" class="btn btn-outline-secondary" onclick="showMember(16)">Name</button>
+    <button id="btn17" type="button" class="btn btn-outline-secondary" onclick="showMember(17)">Name</button>
+    <button id="btn18" type="button" class="btn btn-outline-secondary" onclick="showMember(18)">Name</button>
+
+  </div>  
+
+  </div>
+  <!--JavaScript Tag-->
+  <script src="about.js"></script>
+  
+</body>
+</html>
+
+

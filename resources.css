@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+  background-color:darkblue;
+  color: lavender;
+}
+/* 
+.buttons {
+  text-align: center;
+  
+  color: rgb(230, 230, 250); */
+  //margin: 4px 50px;
+  /* padding: 15px 32px;
+}
+
+button {
+  padding: 5px 5px;
+  background-color: rgb(230, 230, 250);
+  font-size: 50px;
+} */
+
+.btn-secondary{
+  background-color: rgb(230, 230, 250) !important;
+}
+
+.b_color{
+  background-color: rgb(230, 230, 250) !important;
+}
+
+.text {
+  text-align: center;
+  font-size: 18px;
+  padding: 1px 50px;
+}
+
+.list {
+  text-align: left;
+  font-size: 18px;
+  padding: 1px 40px;
+}

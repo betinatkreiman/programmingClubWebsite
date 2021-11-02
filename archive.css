@@ -1,0 +1,10 @@
+body {
+  background-image: url("imgs/greyBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.oldProjects {
+  font-size: 25px;
+}

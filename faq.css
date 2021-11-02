@@ -1,0 +1,14 @@
+body{
+  
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("imgs/tigerOrange.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 40%;
+  background-position: center;
+  background-position-x: center;
+  background-position-y: 60%;
+
+  
+  
+}
