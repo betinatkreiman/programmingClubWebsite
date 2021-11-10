@@ -4,3 +4,9 @@
 .WhyFundraising span { 
   float: right;
 }
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+

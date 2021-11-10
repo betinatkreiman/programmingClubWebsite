@@ -49,20 +49,19 @@ var officer = [
     
   {"name": "Jennifer Li", 
     "image": "headshots/jennifer.jpg",
-    "introduction": "Hello! I’m Jennifer, a sophomore at Newton North High School. My favorite subject is math, but I also enjoy coding and learning various languages. In particular, I like working in front end development, learning about JavaScript animations, and also coding basic games in python. In my free time, I like running, playing tennis, and playing the piano."},
+    "introduction": "Hello! I’m Jennifer, and I am sophomore at Newton North High School. My favorite subject is math, but I also enjoy coding and learning various languages. In particular, I like working in front end development, learning about JavaScript animations, and also coding basic games in python. In my free time, I like running, playing tennis, and playing the piano."},
     
   { "name": "Angela Bai",
     "image": "headshots/angelaTwo.jpeg",
-    "introduction": "Hello! I'm Angela and I'm a junior. I'm one of the advisors of programming club, and I'm so excited to work with everyone on all the upcoming projects this year! Feel free to reach out to me or any of the other advisors with any questions, ideas, or suggestions–we'd love to hear from you :)"},
+    "introduction": "Hello! I'm Angela and I'm a junior. I'm one of the club officers of programming club, and I'm so excited to work with everyone on all the upcoming projects this year! Feel free to reach out to me or any of the other officers with any questions, ideas, or suggestions–we'd love to hear from you :)"},
     
   { "name": "Mr. Peloquin",
     "image": "headshots/adam.jpg",
-    "introduction": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, delectus quod. Quae, placeat nostrum officiis quaerat molestias quidem asperiores nihil! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla cumque eligendi veritatis, placeat autem, accusantium in molestiae assumenda, nemo ab qui nesciunt. Ipsum, libero aspernatur. Lffffaborum nam odio fuga suscipit quia ab velit, corrupti quaerat architecto dolore obcaecati doloremque eaque?"}
+    "introduction": "Hello! Hello! I'm the faculty advisor for the NNHS Programming Club. I think that programming is such a useful tool, and I love the empowerment that people feel when they realize how they can use it to solve problems. My favorite language is Python, but I also like HTML because it appeals to my creative side. Although I don't currently teach any of the programming classes at North, I have taught Intro to Computer Science and Intro to Programming."}
 ]
     
 
 //MEMBER INFO!!!
-// it just doesn't work 
 
 var names = [
   { "name":"Ria Chadusama", 
@@ -122,6 +121,15 @@ var names = [
 
     {"name":"Theo Karon",
     "Introduction": "Hi. I'm Theo. I'm in the club because while I've wanted to learn to code for forever, I'm awful at getting myself to do things; so I decided that this was probably the best way. I do a lot of music stuff. For example, I've been playing violin for 10 years and have composed some decently long songs. Also I play a lot of Geometry Dash. So yeah."},
+
+    {"name":"Nicole Temkin",
+    "Introduction": "Hi, I like frogs and nothing and rock climbing and karate "},
+
+    {"name":"Isabelle Sloan",
+    "Introduction":"Hi my name is Isabelle Sloan, I am learning to code, I like python and html and I am currently working on making different games. I really enjoy playing soccer, reading and Nordic skiing."},
+
+    {"name":"Noah Finkelstein",
+    "Introduction":"My name is Noah Finkelstein, and I'm a Sophomore at North this year (2021 - 2022). I like programming, although I'm only really good at Python (and a little bit of HTML), and I'm happy to be a part of programming club this year!"}
 ]
 
 
