@@ -1,12 +1,22 @@
-.WhyFundraising h5 { 
+/* .WhyFundraising h5 { 
   display: inline;
 }
 .WhyFundraising span { 
   float: right;
+} */
+
+body {
+  text-align: center;
 }
+
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+.fundraiser_img{
+  max-width: 100%;
+  width: auto;
+  padding: 5px;
+}

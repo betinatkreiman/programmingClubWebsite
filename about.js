@@ -52,18 +52,32 @@ var officer = [
     "introduction": "Hello! I’m Jennifer, and I am sophomore at Newton North High School. My favorite subject is math, but I also enjoy coding and learning various languages. In particular, I like working in front end development, learning about JavaScript animations, and also coding basic games in python. In my free time, I like running, playing tennis, and playing the piano."},
     
   { "name": "Angela Bai",
-    "image": "headshots/angelaTwo.jpeg",
+    "image": "headshots/angelaTwo.jpg",
     "introduction": "Hello! I'm Angela and I'm a junior. I'm one of the club officers of programming club, and I'm so excited to work with everyone on all the upcoming projects this year! Feel free to reach out to me or any of the other officers with any questions, ideas, or suggestions–we'd love to hear from you :)"},
     
   { "name": "Mr. Peloquin",
     "image": "headshots/adam.jpg",
     "introduction": "Hello! Hello! I'm the faculty advisor for the NNHS Programming Club. I think that programming is such a useful tool, and I love the empowerment that people feel when they realize how they can use it to solve problems. My favorite language is Python, but I also like HTML because it appeals to my creative side. Although I don't currently teach any of the programming classes at North, I have taught Intro to Computer Science and Intro to Programming."}
 ]
-    
+
+// var link = "https://www.youtube.com/watch?v=ayab7J9vZNs";
+// var element = document.createElement("a");
+// element.setAttribute("href", link);
+// element.innerHTML = "your text";
+
+// and append it to where you'd like it to go:
+// document.body.appendChild(element);
+
+// var link = document.getElementById("btn0");
+// link.innerHTML += "<a href="https://www.youtube.com/watch?v=ayab7J9vZNs">link</a>"
+
 
 //MEMBER INFO!!!
 
 var names = [
+  {"name":"Izzy Craine",
+    "Introduction":"Bonjour je m'appelle Izzy Craine et je suis un sophomore. Je ne programme pas mais je dessine très bien. J'aime l'art et des sports. Je suis très contente d'être partie du club. C'est une bonne famille des gens. Check out my favorite video! https://www.youtube.com/watch?v=ayab7J9vZNs"},
+    
   { "name":"Ria Chadusama", 
     "Introduction": "I’m Ria, a junior. I joined this club because I like programming & I started last year. My favourite language is Python."},
 

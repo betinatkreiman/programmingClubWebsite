@@ -1,4 +1,5 @@
 body{
+  text-align: center;
   
   background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("imgs/tigerOrange.jpg");
   background-repeat: no-repeat;
@@ -11,4 +12,8 @@ body{
 
   
   
+}
+
+.question1 {
+  text-align: left;
 }
