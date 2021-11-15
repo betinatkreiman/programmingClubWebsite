@@ -3,20 +3,35 @@ body {
   background-color:darkblue;
   color: lavender;
 }
-/* 
-.buttons {
-  text-align: center;
-  
-  color: rgb(230, 230, 250); */
-  //margin: 4px 50px;
-  /* padding: 15px 32px;
+
+.navbar{
+  justify-content: center !important;
 }
 
-button {
-  padding: 5px 5px;
-  background-color: rgb(230, 230, 250);
-  font-size: 50px;
-} */
+.navbar-brand{
+  padding-left: 2.5rem;
+}
+
+/*phone size*/
+
+@media only screen and (max-width: 425px){
+
+  .navbar{
+    display: block !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .nav{
+    display: flex;
+  }
+
+  .navbar-brand{
+  margin: 0;
+  padding:  0 !important;
+  padding-right: 0.5rem !important;
+
+  }
+}
 
 .btn-secondary{
   background-color: rgb(230, 230, 250) !important;

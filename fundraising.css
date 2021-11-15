@@ -5,8 +5,33 @@
   float: right;
 } */
 
+
 body {
   text-align: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.91), rgba(255, 255, 255, 0.91)), url("imgs/binary.jpg");
+  /*background-repeat: no-repeat;*/
+  background-attachment: fixed;
+  background-size: cover;
+  /*display: flex;*/
+}
+
+@media only screen and (max-width: 425px){
+
+  .navbar{
+    display: block !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  } 
+  .nav{
+    display: flex;
+  }
+
+  .navbar-brand{
+  margin: 0;
+  padding:  0 !important;
+  padding-right: 0.5rem !important;
+
+  }
 }
 
 img {
@@ -16,7 +41,37 @@ img {
 }
 
 .fundraiser_img{
-  max-width: 100%;
+  max-width: 40%;
   width: auto;
-  padding: 5px;
+  /* padding: 0px 5px 0px; */
+  display: flex;
+  min-width: 300px; 
 }
+
+/* .previousProjects {
+  text-align: left; */
+  /* padding: 0px 20px 0px; */
+
+/* } */
+
+.bakeSale2021 {
+  padding: 0px 15px 0px;
+  font-size: 20px;
+  /* display: flex; */
+}
+
+@media only screen and (max-width: 415px;) {
+  .bakeSale{
+    align-self: center !important;
+  }
+  /* .previousProjects{
+    margin: 0 !important;
+    padding: 0 !important;
+  } */
+}
+
+.bakeSale {
+  text-align: center;
+}
+
+

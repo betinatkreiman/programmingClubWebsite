@@ -1,70 +1,118 @@
+/**/
 body {
   text-align: center;
 }
 
+*{
+  margin: 0
+}
+
+/* Meet the team heading */
+.c_heading{
+  padding-top: 6px;
+}
+
+@media only screen and (max-width: 425px){
+
+  .navbar{
+    display: block !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .nav{
+    display: flex;
+  }
+
+  .navbar-brand{
+  margin: 0;
+  padding:  0 !important;
+  padding-right: 0.5rem !important;
+
+  }
+}
+
+.contact_info{
+  margin-right: 0 !important
+}
+/* officer */
 .names{
   font-size: 20px;
   margin-top: 5;
 }
-.btn{
-  margin-top: 3px;
-}
 .social_icon{
   font-size: 175%;    
 }
-.member_text{
-  text-align: left;
+.container1 {
+  position: relative;
+  /* width: 50%; */
 }
 
+/* officer modal */
 .o_text{
   font-size: 20px;
 }
-.m_name{
-  padding: 5px;
+
+.modal_name{
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
-.m_close{
-  width: 10px;
-  text-align: last;
+.close{
+  float: right;
 }
 
-.c_heading{
-  padding-top: 6px;
-}
 .officer_text{
   text-align: left !important;
   margin-left: 4px;
   margin-right: 0px !important;
   width: 100%;
 }
-
 .modal_headshot{
   float: left;
-  height: 350px;
+  width: 25%;
+  height: auto;
   padding: 4px !important;
   padding-right: 25px !important;
 }
-.modal_name{
-  margin-top: 8px;
-  margin-bottom: 8px;
+
+
+
+/*Member*/
+.btn{
+  margin-top: 3px;
 }
-.headshots{
-  max-width: 85%;
-  width: auto;
+
+
+/*Member modal*/
+
+.modal-content{
+  padding: 8px;
 }
-.close{
-  float: right;
+.member_text{
+  text-align: left !important;
+  margin-left: 4px;
+  margin-right: 0px !important;
+  width: 100%;
 }
+
+.member_headshot{
+  float: left;
+  width: 25%;
+  height: auto;
+  padding: 4px !important;
+  padding-right: 25px !important;
+}
+
+.m_close{
+  width: 10px;
+}
+
 .row{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.container1 {
-  position: relative;
-  /* width: 50%; */
-}
 
 .overlay {
   position: absolute;
@@ -119,6 +167,9 @@ body {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+}
+#closeMember {
+  float: right;
 }
 
 /* The Close Button */

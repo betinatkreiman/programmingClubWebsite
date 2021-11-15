@@ -17,3 +17,22 @@ body{
 .question1 {
   text-align: left;
 }
+
+@media only screen and (max-width: 425px){
+
+  .navbar{
+    display: block !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .nav{
+    display: flex;
+  }
+
+  .navbar-brand{
+  margin: 0;
+  padding:  0 !important;
+  padding-right: 0.5rem !important;
+
+  }
+}
