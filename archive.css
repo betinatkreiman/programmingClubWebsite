@@ -35,3 +35,18 @@ body {
 
   }
 }
+
+.project-img {
+  width: 13vw;
+  float: right;
+  padding: 5px;
+}
+
+.project-header {
+  font-size: 33px;
+}
+
+.projects {
+  padding: 0px 30% 0px;
+  font-size: 20px;
+}

@@ -117,17 +117,9 @@ h1{
   }
 }
 
-
-
-
-
-
-
-
-
 .header {
     background-image: linear-gradient(to right bottom, rgba(64, 64, 64, 0.8), rgba(0, 0, 0, 0.8)), url("imgs/codingImg.jpg");
-    height: 100vh;
+    height: 800px; 
     margin-bottom: 0px;
     background-attachment: fixed;
     background-position: center;
@@ -201,7 +193,7 @@ h1{
 
 .header-primary {
     backface-visibility: hidden;
-    margin-top: 0px;
+    margin-top: 17px;
     /* fix shaking in animations */
 }
 
@@ -211,7 +203,7 @@ h1{
   color: rgb(236, 114, 51);
   display: block;
   letter-spacing: 5px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   animation: moveInFromLeft 2s ease-out;
 }
 
@@ -266,4 +258,5 @@ h1{
   padding-right: 0.5rem !important;
 
   }
+}
 }
