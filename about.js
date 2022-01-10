@@ -56,7 +56,7 @@ document.getElementById("CloseMember").onclick = function() {
 var officer = [
   { "name": "Betina Kreiman",
     "image": "headshots/betski.jpg",
-    "introduction": "Hi! I’m Betina Kreiman, and I’m the president of the Newton North Programming Club! I’m a sophomore at Newton North High School, but I’ve been coding for a couple of years now. My favorite languages are Python and Swift (because I know them the best), but I love trying new things and experimenting with other languages. Currently, I’m in the process of posting my first app on the App Store… but we’ll see how that goes! Other than coding, I love soccer, tennis, and hanging out with my friends! Hope to see you at a club meeting!"},
+    "introduction": "Hi! I’m Betina Kreiman, and I’m the president of the Newton North Programming Club! I’m a sophomore at Newton North High School, but I’ve been coding for a couple of years now. My favorite languages are Python and Swift (because I know them the best), but I love trying new things and experimenting with other languages. Recently, I just uploaded an app to the app store and have been doing some random projects! Other than coding, I love soccer, tennis, and hanging out with my friends! Hope to see you at a club meeting!"},
     
   { "name": "Jennifer Li", 
     "image": "headshots/jennifer.jpg",
