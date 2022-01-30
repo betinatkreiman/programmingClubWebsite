@@ -5,114 +5,329 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resources</title>
 
-  <!-- boostrap link  -->
+  <!-- Bootstrap link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="resources.css" rel="stylesheet" type="text/css" />
+  <!-- CSS link  --> 
+    <link rel="stylesheet" href="resources.css">
 
-    <!-- Favicon Link -->
-    <link rel="shortcut icon" type="image/jpg" href="imgs/a.jpg"/>
+  <!--Bootstrap icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <!-- Favicon Link -->
+  <link rel="shortcut icon" type="image/jpg" href="imgs/a.jpg"/>
 
 </head>
 <body>
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light pl-5">
-        <a class="navbar-brand pt-3 pb-3" href="index.html">Newton North Programming Club</a>
+  <!--Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light pl-5">
+    <a class="navbar-brand p-5 pt-3 pb-3" href="index.html">Newton North Programming Club</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-dark" href="resources.html"> Resources </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="archive.html"> Archive </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="faq.html"> FAQ </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="fundraising.html"> Fundraising </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about_us.html"> About Us </a>
-            </li>
-            <!--
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          -->
-          </ul>
+    <!--Different Tabs-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-dark" href="resources.html"> Resources </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="archive.html"> Archive </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html"> FAQ </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fundraising.html">Fundraising </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about_us.html"> About Us </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1 class="heading">Resources</h1>
+  <!--Begin content-->
+
+  
+
+  </div>
+  <div class="collection">
+    <!-- model! 
+    <div class="resource container">
+      <img src="resourceImgs/test.jpg" alt="" class="image">
+      <div>
+        <a 
+          href="www.google.com" 
+          target="_blank"><span> Heading <!-- Heading  </span></a> 
+        <p>
+        <!-- description 
+        description 
+        </p>
+      </div>
+    </div> -->
+
+    <!-- repl -->
+
+
+    <div class="resource repl container" onmouseover="hover_resource(1)" onmouseout="stop_hover(1)">
+        <center><img src="resourceImgs/repl.jpg" alt="" class="image"></center>
+        <div>
+          <a 
+            href="https://replit.com/~"
+            target="_blank" 
+            id="resource_link_1"
+            class="link">
+            <span> Repl.it</span>
+          </a>
+          <p>  
+            Repl.it is the IDE we use most in Programming Club because it's the most accessible on chromebooks. It is super user-friendly and has lots of different languages. It's definitely the number 1 most used link.
+          </p>
+          <a href="https://replit.com/~"
+            target="_blank" class="read_more" onmouseover="animate_arrow(1)" onmouseout="animate_arrow_back(1)"> Read More  
+            <div class="arrow_div">
+              <span class="more_arrow arr1">&#8594;</span>
+            </div>
+          </a> 
         </div>
-      </nav>
-      <h1 class="h1 text-center p-3">Resources</h1>
+</div>
+
+
+
+    <!-- euler -->
+    <div class="resource euler container "
+    onmouseover="hover_resource(2)"
+    onmouseout="stop_hover(2)">
+      <center><img src="resourceImgs/euler.jpg" alt="" class="image"></center>
+      <div>
+        <a 
+          href="https://projecteuler.net/archives" 
+          target="_blank" class="link" id="resource_link_2"><span> Project Euler</span></a> 
+        <p>
+          Euler Problems has many tons of different coding problems. It's a great way to practice new coding skills and work on your algorithms. You can check whether your answer is right or wrong making it really incentivizing to work on!
+        </p>
+        <a href="https://projecteuler.net/archives"
+          target="_blank" class="read_more"
+          onmouseover="animate_arrow(2)" onmouseout="animate_arrow_back(2)"> Read More <span class="more_arrow arr2">&#8594;</span></a>
+      </div>
     </div>
-  <script src="script.js"></script>
-  <div class="buttons">
-    <div class="pb-0 m-0">
-      <button type="button" class="b_color btn btn-secondary" style="color: grey" onclick="document.location='https://hackerrank.com/products/developer-skills-platform/'">HackerRank</button>
-      <button type="button" class=" b_color btn btn-secondary" style="color: grey" onclick="document.location='https://www.w3schools.com/python/default.asp'">Python Courses</button>
-      <button type="button" class=" b_color btn btn-secondary mt-1 mb-1" style="color: grey" onclick="document.location='https://www.newton.k12.ma.us/Page/49'">Newton North Website</button>
+
+    <!-- leetcode -->
+    <div class="resource leetcode container "
+    onmouseover="hover_resource(3)"
+    onmouseout="stop_hover(3)">
+      <center><img src="resourceImgs/leetcode.jpg" alt="" class="image"></center>
+      <div>
+        <a 
+          href="https://leetcode.com/problemset/all/" 
+          target="_blank" class="link" id="resource_link_3"><span> Leetcode</span></a> 
+        <p>
+          Leetcode is another great site that has interesting coding problems ranging from easy to hard. It's super helpful because it allows you to see your run time and memory usage. You can code right on the site in many different languages.
+        </p>
+        <a href="https://leetcode.com/problemset/all/"
+        target="_blank" class="read_more"
+        onmouseover="animate_arrow(3)" onmouseout="animate_arrow_back(3)"> Read More <span class="more_arrow arr3">&#8594;</span></a>
+      </div>
     </div>
-    <br>
-    <div>
-      <button type="button" class="b_color btn btn-secondary" style="color: grey" onclick="document.location='https://replit.com/~'">Repl.it</button>
-      <button type="button" class="b_color btn btn-secondary" style="color: grey"  onclick="document.location='https://github.com/'">Github</button>
-      <button type="button" class="b_color btn btn-secondary" style="color: grey" onclick="document.location='https://pages.github.com/'">Github Pages</button>
-      <button type="button" class="b_color btn btn-secondary" style="color: grey" onclick="document.location='https://leetcode.com/problemset/all/'">Leetcode</button>
-      <button type="button" class="b_color btn btn-secondary mt-1 mb-1" style="color: grey" onclick="document.location='https://codesignal.com/'">CodeSignal</button>
+
+    <!-- Python courses -->
+    <div class="resource pythonCourses container"
+    onmouseover="hover_resource(4)"
+    onmouseout="stop_hover(4)">
+      <center><img src="resourceImgs/python.jpg" alt="" class="image"></center>
+      <div>
+        <a 
+          href="https://www.w3schools.com/python/default.asp" 
+          target="_blank" class="link"
+          id="resource_link_4"><span> Python Courses</span></a> 
+        <p>
+          These are really helpful python courses from W3 Schools. It takes you through everything you will need to know to become fluent in python. It's super helpful and definitely referenced a lot by pro programmers. 
+        </p>
+        <a href="https://www.w3schools.com/python/default.asp"
+        target="_blank" class="read_more"
+        onmouseover="animate_arrow(4)" onmouseout="animate_arrow_back(4)"> Read More <span class="more_arrow arr4">&#8594;</span></a>
+      </div>
     </div>
-    <br>
-    <div>
-      <button 
-        type="button" 
-        class="b_color btn btn-secondary" 
-        style="color: grey"  onclick="document.location='https://www.w3schools.com/html/default.asp'">HTML Courses</button>
-      <button 
-        type="button" 
-        class="b_color btn btn-secondary" 
-        style="color: grey"  onclick="document.location='https://projecteuler.net/archives'">Euler Problems</button>
-      <button type="button" class="b_color btn btn-secondary" style="color: grey" onclick="document.location='https://codewars.com/dashboard'">CodeWars</button>
-      <button type="button" class="b_color btn btn-secondary mt-1 mb-1" style="color: grey" onclick="document.location='https://discord.gg/dZ4RVNRQEm/'">Discord</button>
+
+    <!-- Swift courses -->
+    <div class="resource swiftCourses container "
+    onmouseover="hover_resource(5)"
+    onmouseout="stop_hover(5)">
+      <center><img src="resourceImgs/swift2.jpg" alt="" class="image"></center>
+      <div>
+        <a 
+          href="https://www.codecademy.com/catalog/language/swift" 
+          target="_blank" class="link"
+          id="resource_link_5"><span> Swift Courses</span></a> 
+        <p>
+          Here's a really helpful swift course. Swift is a great language that is used for app development so we figured it would be really interesting to learn about. 
+        </p>
+        <a href="https://www.codecademy.com/catalog/language/swift"
+        target="_blank" class="read_more"
+        onmouseover="animate_arrow(5)" onmouseout="animate_arrow_back(5)"> Read More <span class="more_arrow arr5">&#8594;</span></a>
+      </div>
     </div>
-    <br>   
-    <div> 
-      <button type="button" class="b_color btn btn-secondary" style="color: grey" onclick="document.location='https://www.tutorialspoint.com/execute_python_online.php'">CodingGround Python</button>
-      <button type="button" class="b_color btn btn-secondary" style="color: grey" onclick="document.location='https://nnhshacks.tech/#sponsors'">Newton Hacks Website</button>
+
+    <!-- HTMl courses -->
+    <div class="resource htmlCourses container"
+    onmouseover="hover_resource(6)"
+    onmouseout="stop_hover(6)">
+      <center><img src="resourceImgs/w3school.jpg" alt="" class="image"></center>
+      <div>
+        <a href="https://www.w3schools.com/html/default.asp"
+        target="_blank" class="link"
+        id="resource_link_6"><span> HTML Courses</span></a> 
+        <p>  
+          Here are really helpful HTML courses from W3 Schools. It takes you through everything you will need to know to create a fancy webiste like ours! It's a great reference even if you are already a pro HTML programmer.
+        </p>
+        <a href="https://www.w3schools.com/html/default.asp"
+        target="_blank" class="read_more"
+        onmouseover="animate_arrow(6)" onmouseout="animate_arrow_back(6)"> Read More <span class="more_arrow arr6">&#8594;</span></a>
+      </div>
     </div>
-    <br>
+
+    <!-- North Website -->
+    <div class="resource northSite container"
+    onmouseover="hover_resource(7)"
+    onmouseout="stop_hover(7)">
+      <center><img src="resourceImgs/nps.jpg" alt="" class="image"></center>
+      <div>
+        <a 
+          href="https://www.newton.k12.ma.us/Page/49" 
+          target="_blank" class="link"
+          id="resource_link_7"><span> Newton North Website</span></a> 
+        <p>
+          Here is easy access to Newton North High School's website.  
+        </p>
+        <a href="https://www.newton.k12.ma.us/Page/49"
+        target="_blank" class="read_more"
+        onmouseover="animate_arrow(7)" onmouseout="animate_arrow_back(7)"> Read More <span class="more_arrow arr7">&#8594;</span></a>
+      </div>
+      </div>
+
+    <!-- github -->
+    <div class="resource github container"
+    onmouseover="hover_resource(8)"
+    onmouseout="stop_hover(8)">
+      <center><img src="resourceImgs/github.jpg" alt="" class="image"></center>
+      <div>
+        <a href="https://github.com/"
+        target="_blank" class="link"
+        id="resource_link_8"><span> Github</span></a> 
+        <p>  
+          Github is a great place to store code! Programmers use github to keep track of their progress and not lose old code. It's also an easy way to share code with others.
+        </p>
+        <a href="https://github.com/"
+        target="_blank" class="read_more"
+        onmouseover="animate_arrow(8)" onmouseout="animate_arrow_back(8)"> Read More <span class="more_arrow arr8">&#8594;</span></a>
+      </div>
+    </div>
+
+    <!-- codewars -->
+    <div class="resource codewars container"
+    onmouseover="hover_resource(9)"
+    onmouseout="stop_hover(9)">
+      <center><img src="resourceImgs/codewars.jpg" alt="" class="image"></center>
+      <div>
+        <a href="https://codewars.com/dashboard"
+        target="_blank" class="link"
+        id="resource_link_9"><span> Codewars </span></a> 
+        <p>  
+          Codewars is yet another great site with tons of really cool coding problems. They make you think hard and they are a great way to expand programming skills. 
+        </p>
+        <a href="https://codewars.com/dashboard"
+        target="_blank" class="read_more"
+        onmouseover="animate_arrow(9)" onmouseout="animate_arrow_back(9)"> Read More <span class="more_arrow arr9">&#8594;</span></a>
+      </div>
+    </div>
+
+    <!-- Newton Hacks Website -->
+    <div class="resource newtonHack container"
+    onmouseover="hover_resource(10)"
+    onmouseout="stop_hover(10)">
+      <center><img src="resourceImgs/hacks.jpg" alt="" class="image"></center>
+      <div>
+        <a href="https://nnhshacks.tech/"
+        target="_blank" class="link"
+        id="resource_link_10"><span> Newton Hacks Website</span></a> 
+        <p>  
+          The Programing Club is working together with a group of students at North who organize Hackathons! We'll let you know when there is a hackathon so everyone can participate.
+        </p>
+        <a href="https://nnhshacks.tech/"
+        target="_blank" class="read_more"
+        onmouseover="animate_arrow(10)" onmouseout="animate_arrow_back(10)"> Read More <span class="more_arrow arr10">&#8594;</span></a>
+      </div>
+    </div>
+
+    <!-- discord -->
+    <div class="resource discord container "
+    onmouseover="hover_resource(11)"
+    onmouseout="stop_hover(11)">
+      <center><img src="resourceImgs/discord.jpg" alt="" class="image"></center>
+      <div>
+        <a href="https://discord.gg/dZ4RVNRQEm/"
+        target="_blank" class="link"
+        id="resource_link_11"><span> Discord</span></a> 
+        <p>  
+          We use Discord to communicate with everyone about upcoming events for our club and weekly meeting reminders. We also use email but we like to be very communicative.
+        </p>
+        <a href="https://discord.gg/dZ4RVNRQEm/"
+        target="_blank" class="read_more"
+        onmouseover="animate_arrow(11)" onmouseout="animate_arrow_back(11)"> Read More <span class="more_arrow arr11">&#8594;</span></a>
+      </div>
+    </div>
+
+    <!-- codingground -->
+    <div class="resource codingGround container "
+    onmouseover="hover_resource(12)"
+    onmouseout="stop_hover(12)">
+      <center><img src="resourceImgs/ground.jpg" alt="" class="image"></center>
+      <div>
+        <a href="https://www.tutorialspoint.com/execute_python_online.php"
+          target="_blank" class="link"
+          id="resource_link_12"><span> CodingGround Python</span></a> 
+        <p>  
+          This is an easy IDE for python (place to code) which requires no account and you don't need to download anything. It's really helpful to just test things out. 
+        </p>
+        <a href="https://www.tutorialspoint.com/execute_python_online.php"
+        target="_blank" class="read_more"
+        onmouseover="animate_arrow(12)" onmouseout="animate_arrow_back(12)"> Read More <span class="more_arrow arr12">&#8594;</span></a>
+      </div>
+    </div>
   </div>
 
-  <div class="text">
-    <p>The Programming Club is working together with a group of students at North who organize Hackathons! We’ll let you know when there is a Hackathon going on so everybody who wants can participate.</p>
-    <h1>Languages We Use!</h1>
-  </div>
 
-  <div class="list">
-     <ul>
-        <li><p>HTML, CSS, JS</p></li>
-        <li><p>Python</p></li>
-        <li><p>Swift</p></li>
-        <li><p>Java</p></li>
-        <li><p>C++</p></li>
-        <li><p>C#</p></li>
-        <!--  li><p>Unity</p></li> -->
-        <li><p>Manim</p></li>
-     </ul>
+  <div class="languages" >
+    <h1 class="whatWeUse">Languages We Use</h1>
+    <ul class="list_languages">
+      <li>
+        <span class="language_name"> Python &#8594 </span>; Literally used for everything like sorting problems, games, and artificial intelligence
+      </li>
+      <li>
+       <span class="language_name"> HTML, CSS, JS &#8594; </span>Used to make websites and animations (like this one!)
+      </li>
+      <li>
+        <span class="language_name"> Swift  &#8594; </span>For app development and recreation! Both backend and frontend
+      </li>
+      <li>
+        <span class="language_name"> Java &#8594; </span> Similar to python and is very broadly applied
+      </li>
+      <li>
+        <span class="language_name"> C++ &#8594; </span>  Used in operating systems and games. Good language for beginners!
+      </li>
+      <li>
+        <span class="language_name">C# &#8594; </span> For desktop applications, web applications, and web services
+      </li>
+      <li>
+        <span class="language_name"> Manim &#8594;</span> Used for really cool and sophisticated animations!
+      </li>
+    </ul>
   </div>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <!--GSap Animationnnns whooooohooooooo-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="resources.js"></script>
 </body>
 </html>

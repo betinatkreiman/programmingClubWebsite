@@ -78,6 +78,10 @@ var names = [
   { "name":"Izzy Craine",
     "image":"",
     "Introduction":"<p>Bonjour je m'appelle Izzy Craine et je suis un sophomore. Je ne programme pas mais je dessine très bien. J'aime l'art et des sports. Je suis très contente d'être partie du club. C'est une bonne famille des gens. Check out my favorite video!  <a href = 'https://www.youtube.com/watch?v=ayab7J9vZNs'> https://www.youtube.com/watch?v=ayab7J9vZNs </a> </p>"},
+
+  { "name":"Eva Mescher",
+    "image":"",
+    "Introduction":"<p>I am a sophomore at Newton North. I like playing soccer, basketball, softball, and track. I also like to code in java script, python, and swift.</p>"},
     
   { "name":"Ria Chudasama",
     "image":"", 
@@ -130,7 +134,6 @@ var names = [
   { "name":"Sami Brodsky", 
     "image":"",
     "Introduction": "<p>I am a junior at nnhs and I play soccer. I am a good student who gets reasonable grades, and I really enjoy reading books over and over again.</p>"},
-
 
   { "name":"Luis Carvalho",
     "image":"memberPic/luis.jpg",

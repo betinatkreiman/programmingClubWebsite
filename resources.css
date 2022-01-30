@@ -1,58 +1,122 @@
-body {
+.heading{
   text-align: center;
-  background-color:darkblue;
-  color: lavender;
+  font-size: 5ch;
+  padding-top: 1%;
+  padding-bottom: 1%
 }
 
-.navbar{
-  /* justify-content: center !important; */
+.whatWeUse{
+  font-size: 5ch;
 }
 
-.navbar-brand{
-  padding-left: 2.5rem;
+p{
+  font-size: 1.6ch
 }
 
-/*phone size*/
-
-@media only screen and (max-width: 425px){
-
-  .navbar{
-    display: block !important;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  .nav{
-    display: flex;
-  }
-
-  .navbar-brand{
-  margin: 0;
-  padding:  0 !important;
-  padding-right: 0.5rem !important;
-
-  }
+.collection{
+  margin: 0 auto;
+  padding-left: 19%;
+  padding-right: 17%;
 }
 
-.btn-secondary{
-  background-color: rgb(230, 230, 250) !important;
+.languages{
+  margin-bottom: 5%;
+}
+.resource{
+  /* border-style: solid; */
+  width: 31%;
+  height: 540px;
+  /* margin-right: 2%;
+  margin-bottom: 2%; */
+  padding:0;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  
 }
 
-.b_color{
-  background-color: rgb(230, 230, 250) !important;
+.whatWeUse{
+  /* height: 540px; */
+  display: flex;
+  
+  width: 50%;
+  margin-left: 19.5%; 
+  /* margin-right: 15%  */
 }
 
-.text {
+.more_arrow{
+  display: block;
+  margin-left: 5px;
+}
+.read_more{
+  font-size: 1.5ch;
+  display: flex;
+  text-decoration: none;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 15%;
+}
+
+.image {
+  height: 30vh;
+  width: auto;
   text-align: center;
-  font-size: 18px;
-  padding: 1px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
 }
 
-.list {
-  text-align: left;
-  font-size: 18px;
-  padding: 1px 40px;
+.link{
+  font-size: 3ch;
+  text-decoration: none;
+  color: black;
 }
 
-.buttons {
-  text-align: center;
+.language_name{
+  font-weight: 500;
+}
+
+/* .div2{
+  margin-left: 2%;
+  margin-right: 2%;
+} */
+
+
+.list_languages{
+  margin-left: 19%;
+  font-size: 2ch;
+  line-height: 1.9em;
+}
+
+.collection p{
+    /* padding-left: 5%;
+    padding-right: 5%; */
+    text-align: justify;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+
+@media only screen and (max-width: 1200px){
+  .resource{ 
+    /* border-style: solid; */ 
+    width: 47%;
+    height: 540px;
+    padding:0;
+    float: left;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .resource{ 
+    /* border-style: solid; */
+    width: 90%;
+    height: 540px;
+    padding:0;
+    float: left;
+  }
 }
