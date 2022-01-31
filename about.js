@@ -148,7 +148,8 @@ var names = [
     "Introduction": "<p> Hey I’m Matt I’m a sophomore I like soccer and programming. </p>"},
 
   { "name":"Jacob Chen",
-    "image":"memberPic/jacob.jpg",
+    // "image":"memberPic/jacob.jpg",
+    "image":"",
     "Introduction": "<p> Hello, World! I am super excited to be apart of programming club. I joined to help other students out with their projects. Also, I have been competing in hackathons, and I want to get into CP. One fun fact about me: my favorite color is orange!</p>"},
 
   { "name":"Alex Elvin",

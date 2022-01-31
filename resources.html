@@ -46,14 +46,11 @@
         </li>
       </ul>
     </div>
+
   </nav>
-
-  <h1 class="heading">Resources</h1>
   <!--Begin content-->
+  <h1 class="heading">Resources</h1>
 
-  
-
-  </div>
   <div class="collection">
     <!-- model! 
     <div class="resource container">
@@ -71,35 +68,41 @@
 
     <!-- repl -->
 
-
-    <div class="resource repl container" onmouseover="hover_resource(1)" onmouseout="stop_hover(1)">
-        <center><img src="resourceImgs/repl.jpg" alt="" class="image"></center>
-        <div>
-          <a 
-            href="https://replit.com/~"
-            target="_blank" 
-            id="resource_link_1"
-            class="link">
-            <span> Repl.it</span>
-          </a>
-          <p>  
-            Repl.it is the IDE we use most in Programming Club because it's the most accessible on chromebooks. It is super user-friendly and has lots of different languages. It's definitely the number 1 most used link.
-          </p>
-          <a href="https://replit.com/~"
-            target="_blank" class="read_more" onmouseover="animate_arrow(1)" onmouseout="animate_arrow_back(1)"> Read More  
-            <div class="arrow_div">
-              <span class="more_arrow arr1">&#8594;</span>
-            </div>
-          </a> 
-        </div>
-</div>
-
+    <div 
+      class="resource repl container resource_link_1_rep" 
+      onmouseover ="hover_resource(1)" 
+      onmouseout ="stop_hover(1)">
+      <center><img src="resourceImgs/repl.jpg" alt="" class="image"></center>
+      <div>
+        <a 
+          href="https://replit.com/~"
+          target="_blank" 
+          id="resource_link_1"
+          class="link">
+          <span> Repl.it</span>
+        </a>
+        <p>  
+          Repl.it is the IDE we use most in Programming Club because it's the most accessible on chromebooks. It is super user-friendly and has lots of different languages. It's definitely the number 1 most used link.
+        </p>
+        <a 
+          href="https://replit.com/~"
+          target="_blank" 
+          class="read_more" 
+          onmouseover="animate_arrow(1)" 
+          onmouseout="animate_arrow_back(1)"> Read More  
+          <div class="arrow_div">
+            <span class="more_arrow arr1">&#8594;</span>
+          </div>
+        </a> 
+      </div>
+    </div>
 
 
     <!-- euler -->
-    <div class="resource euler container "
-    onmouseover="hover_resource(2)"
-    onmouseout="stop_hover(2)">
+    <div 
+      class="resource euler container "
+      onmouseover="hover_resource(2)"
+      onmouseout="stop_hover(2)">
       <center><img src="resourceImgs/euler.jpg" alt="" class="image"></center>
       <div>
         <a 
@@ -303,7 +306,7 @@
     <h1 class="whatWeUse">Languages We Use</h1>
     <ul class="list_languages">
       <li>
-        <span class="language_name"> Python &#8594 </span>; Literally used for everything like sorting problems, games, and artificial intelligence
+        <span class="language_name"> Python &#8594 </span> Literally used for everything like sorting problems, games, and artificial intelligence
       </li>
       <li>
        <span class="language_name"> HTML, CSS, JS &#8594; </span>Used to make websites and animations (like this one!)
@@ -315,13 +318,10 @@
         <span class="language_name"> Java &#8594; </span> Similar to python and is very broadly applied
       </li>
       <li>
-        <span class="language_name"> C++ &#8594; </span>  Used in operating systems and games. Good language for beginners!
+        <span class="language_name"> C++ &#8594; </span>  Used in operating systems, game development, web browsers, and databases
       </li>
       <li>
         <span class="language_name">C# &#8594; </span> For desktop applications, web applications, and web services
-      </li>
-      <li>
-        <span class="language_name"> Manim &#8594;</span> Used for really cool and sophisticated animations!
       </li>
     </ul>
   </div>
@@ -329,5 +329,9 @@
   <!--GSap Animationnnns whooooohooooooo-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="resources.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

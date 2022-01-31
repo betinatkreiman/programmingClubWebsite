@@ -1,3 +1,7 @@
+nav {
+  text-align: center;
+}
+
 .heading{
   text-align: center;
   font-size: 5ch;
@@ -26,8 +30,6 @@ p{
   /* border-style: solid; */
   width: 31%;
   height: 540px;
-  /* margin-right: 2%;
-  margin-bottom: 2%; */
   padding:0;
   float: left;
   margin-left: 1%;
@@ -36,12 +38,9 @@ p{
 }
 
 .whatWeUse{
-  /* height: 540px; */
   display: flex;
-  
   width: 50%;
   margin-left: 19.5%; 
-  /* margin-right: 15%  */
 }
 
 .more_arrow{
@@ -49,12 +48,12 @@ p{
   margin-left: 5px;
 }
 .read_more{
-  font-size: 1.5ch;
+  font-size: 1.7ch;
   display: flex;
   text-decoration: none;
   padding-top: 5%;
-  padding-bottom: 5%;
-  padding-right: 15%;
+  padding-bottom: 6%;
+  padding-right: 16%;
 }
 
 .image {
@@ -77,12 +76,6 @@ p{
   font-weight: 500;
 }
 
-/* .div2{
-  margin-left: 2%;
-  margin-right: 2%;
-} */
-
-
 .list_languages{
   margin-left: 19%;
   font-size: 2ch;
@@ -90,8 +83,6 @@ p{
 }
 
 .collection p{
-    /* padding-left: 5%;
-    padding-right: 5%; */
     text-align: justify;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -118,5 +109,25 @@ p{
     height: 540px;
     padding:0;
     float: left;
+  }
+}
+
+
+@media only screen and (max-width: 425px){
+
+  .navbar{
+    display: block !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  } 
+  .nav{
+    display: flex;
+  }
+
+  .navbar-brand{
+  margin: 0;
+  padding:  0 !important;
+  padding-right: 0.5rem !important;
+
   }
 }
