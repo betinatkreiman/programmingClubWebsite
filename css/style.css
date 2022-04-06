@@ -1,0 +1,233 @@
+body {
+  text-align: center;
+}
+
+h1{
+  font-size: 270%;
+  text-align: center
+}
+.main_info{
+  text-align: center
+}
+.title{
+  text-transform: uppercase
+}
+
+.club_contact{
+  font-size: 50%;
+} 
+
+.s_icons{
+  font-size:220%;
+  color: #f2f3f4;
+}
+
+.names{
+  font-size: 20px;
+  margin-top: 5;
+}
+
+.social_icon{
+  font-size: 205%;    
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0
+}
+
+.gallery .container-fluid{
+  padding:0;
+}
+
+.row .column{
+  flex: 33.3%;
+  width: auto;
+  overflow: hidden;
+  height: 100%;
+}
+
+.row .column img{
+  margin-top: 2%;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 800px){
+  .row .column{
+    flex: 50%
+  }
+}
+
+/*phone size*/
+@media only screen and (max-width: 425px){
+  .header-primary{
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .navbar{
+    display: block !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+  }
+  
+  .logo-img{
+    width: 80% !important;
+  }
+  .header-primary-sub{
+    font-size: 20px !important;
+    font-weight: 300 !important;
+    line-height: normal;
+    padding-bottom: 20px !important;
+  }
+  .nav{
+    display: flex;
+  }
+
+  .navbar-brand{
+    margin: 0;
+    padding:  0 !important;
+    padding-right: 0.5rem !important;
+
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .row .column{
+    flex: 100%
+  }
+}
+
+.header {
+  background-image: linear-gradient(to right bottom, rgba(64, 64, 64, 0.8), rgba(0, 0, 0, 0.8)), URL("../imgs/mainImgs/codingImg.jpg");
+  height: 800px; 
+  margin-bottom: 0px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  display: flex;
+}
+
+.behind-header {
+  height: 85vh;
+  width: 100vw;
+  position: absolute;
+  top: 60px;
+  background: linear-gradient(to bottom, #000000, #fff);
+  z-index: -1;
+}
+
+.logo-box {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  z-index: 1;
+}
+
+.logo-content-container {
+  position: sticky;
+  top: 70px;
+  left: 0;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: #ec9b3b;
+}
+
+.logo-link:hover {
+  text-decoration: none;
+  color: #ec9b3b;
+}
+
+.logo-img {
+  width: 60%;
+  margin-bottom: -10px;
+  animation: logoMoveDownFromTop 2s;
+    
+}
+
+.logo-caption {
+  position: sticky;
+  font-weight: 700;
+}
+
+.text-box {
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.header-primary {
+  backface-visibility: hidden;
+  margin-top: 17px;
+}
+
+.header-primary-main {
+  font-weight: 400;
+  font-size: 170%;
+  color: rgb(236, 114, 51);
+  display: block;
+  letter-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.header-primary-sub {
+  color: rgb(222, 124, 64);
+  font-weight: 650;
+  font-size: 25px;
+  display: block;
+  padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 50px;) {
+  .header-primary-main {
+    font-size: 20%;
+    flex: 20%;
+  }
+}
+
+
+
+@media only screen and (max-width: 345px){
+  .header-primary{
+    font-size: 100%;
+    font-weight: 400;
+  }
+  
+  .navbar{
+    display: block !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .logo-img{
+    width: 80% !important;
+  }
+  
+  .header-primary-sub{
+    font-size: 15px !important;
+    font-weight: 300 !important;
+    line-height: normal;
+    padding-bottom: 20px !important;
+  }
+  
+  .nav{
+    display: flex;
+  }
+
+  .navbar-brand{
+    margin: 0;
+    padding: 0 !important;
+    padding-right: 0.5rem !important;
+  }
+}

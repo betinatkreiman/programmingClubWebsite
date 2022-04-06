@@ -1,0 +1,184 @@
+body {
+  text-align: center;
+}
+
+*{
+  margin: 0
+}
+
+/* Meet the team heading */
+.c_heading{
+  padding-top: 6px;
+}
+
+.contact_info{
+  margin-right: 0 !important
+}
+/* officer */
+.names{
+  font-size: 20px;
+  margin-top: 5;
+}
+.social_icon{
+  font-size: 175%;    
+}
+.container1 {
+  position: relative;
+}
+
+/* officer modal */
+.o_text{
+  font-size: 20px;
+}
+
+.modal_name{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.close{
+  float: right;
+}
+
+.officer_text{
+  text-align: left !important;
+  margin-left: 4px;
+  margin-right: 0px !important;
+  width: 100%;
+}
+.modal_headshot{
+  float: left;
+  width: 25%;
+  height: auto;
+  padding: 4px !important;
+  padding-right: 25px !important;
+}
+
+
+/*Member*/
+.btn{
+  margin-top: 3px;
+}
+
+
+/*Member modal*/
+
+.modal-content{
+  padding: 8px;
+}
+.member_text{
+  text-align: left !important;
+  margin-left: 4px;
+  margin-right: 0px !important;
+  width: 100%;
+}
+
+.member_headshot{
+  float: left;
+  width: 25%;
+  height: auto;
+  padding: 4px !important;
+  padding-right: 25px !important;
+}
+
+.m_close{
+  width: 10px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 255, 255, .4); 
+}
+
+.container1:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+ /* stuff for blurbs  */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+#closeMember {
+  float: right;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 425px){
+  .navbar{
+    display: block !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .nav{
+    display: flex;
+  }
+
+  .navbar-brand{
+    margin: 0;
+    padding:  0 !important;
+    padding-right: 0.5rem !important;
+  }
+}

@@ -1,0 +1,127 @@
+nav {
+  text-align: center;
+}
+
+.heading{
+  text-align: center;
+  font-size: 5ch;
+  padding-top: 1%;
+  padding-bottom: 1%
+}
+
+.whatWeUse{
+  font-size: 5ch;
+}
+
+p{
+  font-size: 1.6ch
+}
+
+.collection{
+  margin: 0 auto;
+  padding-left: 19%;
+  padding-right: 17%;
+}
+
+.languages{
+  margin-bottom: 5%;
+}
+.resource{
+  width: 31%;
+  height: 540px;
+  padding:0;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;  
+}
+
+.whatWeUse{
+  display: flex;
+  width: 50%;
+  margin-left: 19.5%; 
+}
+
+.more_arrow{
+  display: block;
+  margin-left: 5px;
+}
+.read_more{
+  font-size: 1.7ch;
+  display: flex;
+  text-decoration: none;
+  padding-top: 5%;
+  padding-bottom: 6%;
+  padding-right: 16%;
+}
+
+.image {
+  height: 30vh;
+  width: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+}
+
+.link{
+  font-size: 3ch;
+  text-decoration: none;
+  color: black;
+}
+
+.language_name{
+  font-weight: 500;
+}
+
+.list_languages{
+  margin-left: 19%;
+  font-size: 2ch;
+  line-height: 1.9em;
+}
+
+.collection p{
+    text-align: justify;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1200px){
+  .resource{ 
+    /* border-style: solid; */ 
+    width: 47%;
+    height: 540px;
+    padding:0;
+    float: left;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .resource{ 
+    /* border-style: solid; */
+    width: 90%;
+    height: 540px;
+    padding:0;
+    float: left;
+  }
+}
+
+
+@media only screen and (max-width: 425px){
+  .navbar{
+    display: block !important;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  } 
+  .nav{
+    display: flex;
+  }
+
+  .navbar-brand{
+    margin: 0;
+    padding:  0 !important;
+    padding-right: 0.5rem !important;
+  }
+}

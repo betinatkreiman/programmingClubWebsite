@@ -8,13 +8,13 @@
   <!-- Bootstrap link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- CSS link  --> 
-    <link rel="stylesheet" href="resources.css">
+    <link rel="stylesheet" href="css/resources.css">
 
   <!--Bootstrap icons-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
   <!-- Favicon Link -->
-  <link rel="shortcut icon" type="image/jpg" href="imgs/a.jpg"/>
+  <link rel="shortcut icon" type="image/jpg" href="imgs/favicon.jpg"/>
 
 </head>
 <body>
@@ -52,48 +52,34 @@
   <h1 class="heading">Resources</h1>
 
   <div class="collection">
-    <!-- model! 
-    <div class="resource container">
-      <img src="resourceImgs/test.jpg" alt="" class="image">
-      <div>
-        <a 
-          href="www.google.com" 
-          target="_blank"><span> Heading <!-- Heading  </span></a> 
-        <p>
-        <!-- description 
-        description 
-        </p>
-      </div>
-    </div> -->
-
-    <!-- repl -->
-
+  <!-- repl -->
     <div 
       class="resource repl container resource_link_1_rep" 
       onmouseover ="hover_resource(1)" 
       onmouseout ="stop_hover(1)">
-      <center><img src="resourceImgs/repl.jpg" alt="" class="image"></center>
-      <div>
-        <a 
-          href="https://replit.com/~"
-          target="_blank" 
-          id="resource_link_1"
-          class="link">
-          <span> Repl.it</span>
-        </a>
-        <p>  
-          Repl.it is the IDE we use most in Programming Club because it's the most accessible on chromebooks. It is super user-friendly and has lots of different languages. It's definitely the number 1 most used link.
-        </p>
-        <a 
-          href="https://replit.com/~"
-          target="_blank" 
-          class="read_more" 
-          onmouseover="animate_arrow(1)" 
-          onmouseout="animate_arrow_back(1)"> Read More  
-          <div class="arrow_div">
-            <span class="more_arrow arr1">&#8594;</span>
-          </div>
-        </a> 
+      <center>
+        <img src="imgs/resourceImgs/repl.jpg" alt="" class="image">                   </center>
+    <div>
+    <a 
+      href="https://replit.com/~"
+      target="_blank" 
+      id="resource_link_1"
+      class="link">
+      <span> Repl.it</span>
+    </a>
+    <p>  
+      Repl.it is the IDE we use most in Programming Club because it's the         most accessible on chromebooks. It is super user-friendly and has           lots of different languages. It's definitely the number 1 most used         link.
+    </p>
+      <a 
+        href="https://replit.com/~"
+        target="_blank" 
+        class="read_more" 
+        onmouseover="animate_arrow(1)" 
+        onmouseout="animate_arrow_back(1)"> Read More  
+        <div class="arrow_div">
+          <span class="more_arrow arr1">&#8594;</span>
+        </div>
+      </a> 
       </div>
     </div>
 
@@ -103,17 +89,24 @@
       class="resource euler container "
       onmouseover="hover_resource(2)"
       onmouseout="stop_hover(2)">
-      <center><img src="resourceImgs/euler.jpg" alt="" class="image"></center>
+      <center>
+        <img src="imgs/resourceImgs/euler.jpg" alt="" class="image">
+      </center>
       <div>
         <a 
           href="https://projecteuler.net/archives" 
-          target="_blank" class="link" id="resource_link_2"><span> Project Euler</span></a> 
+          target="_blank" class="link" id="resource_link_2">
+          <span> Project Euler</span>
+        </a> 
         <p>
-          Euler Problems has many tons of different coding problems. It's a great way to practice new coding skills and work on your algorithms. You can check whether your answer is right or wrong making it really incentivizing to work on!
+          Euler Problems has many tons of different coding problems. It's a           great way to practice new coding skills and work on your                    algorithms. You can check whether your answer is right or wrong             making it really incentivizing to work on!
         </p>
         <a href="https://projecteuler.net/archives"
           target="_blank" class="read_more"
-          onmouseover="animate_arrow(2)" onmouseout="animate_arrow_back(2)"> Read More <span class="more_arrow arr2">&#8594;</span></a>
+          onmouseover="animate_arrow(2)"
+          onmouseout="animate_arrow_back(2)"> Read More 
+          <span class="more_arrow arr2">&#8594;</span>
+        </a>
       </div>
     </div>
 
@@ -121,13 +114,16 @@
     <div class="resource leetcode container "
     onmouseover="hover_resource(3)"
     onmouseout="stop_hover(3)">
-      <center><img src="resourceImgs/leetcode.jpg" alt="" class="image"></center>
+      <center>
+        <img src="imgs/resourceImgs/leetcode.jpg" alt="" class="image">
+      </center>
       <div>
         <a 
           href="https://leetcode.com/problemset/all/" 
-          target="_blank" class="link" id="resource_link_3"><span> Leetcode</span></a> 
+          target="_blank" class="link" id="resource_link_3">
+          <span> Leetcode</span></a> 
         <p>
-          Leetcode is another great site that has interesting coding problems ranging from easy to hard. It's super helpful because it allows you to see your run time and memory usage. You can code right on the site in many different languages.
+          Leetcode is another great site that has interesting coding                  problems ranging from easy to hard. It's super helpful because              it allows you to see your run time and memory usage. You can code           right on the site in many different languages.
         </p>
         <a href="https://leetcode.com/problemset/all/"
         target="_blank" class="read_more"
@@ -139,7 +135,7 @@
     <div class="resource pythonCourses container"
     onmouseover="hover_resource(4)"
     onmouseout="stop_hover(4)">
-      <center><img src="resourceImgs/python.jpg" alt="" class="image"></center>
+      <center><img src="imgs/resourceImgs/python.jpg" alt="" class="image"></center>
       <div>
         <a 
           href="https://www.w3schools.com/python/default.asp" 
@@ -158,7 +154,7 @@
     <div class="resource swiftCourses container "
     onmouseover="hover_resource(5)"
     onmouseout="stop_hover(5)">
-      <center><img src="resourceImgs/swift2.jpg" alt="" class="image"></center>
+      <center><img src="imgs/resourceImgs/swift2.jpg" alt="" class="image"></center>
       <div>
         <a 
           href="https://www.codecademy.com/catalog/language/swift" 
@@ -177,7 +173,7 @@
     <div class="resource htmlCourses container"
     onmouseover="hover_resource(6)"
     onmouseout="stop_hover(6)">
-      <center><img src="resourceImgs/w3school.jpg" alt="" class="image"></center>
+      <center><img src="imgs/resourceImgs/w3school.jpg" alt="" class="image"></center>
       <div>
         <a href="https://www.w3schools.com/html/default.asp"
         target="_blank" class="link"
@@ -195,7 +191,7 @@
     <div class="resource northSite container"
     onmouseover="hover_resource(7)"
     onmouseout="stop_hover(7)">
-      <center><img src="resourceImgs/nps.jpg" alt="" class="image"></center>
+      <center><img src="imgs/resourceImgs/nps.jpg" alt="" class="image"></center>
       <div>
         <a 
           href="https://www.newton.k12.ma.us/Page/49" 
@@ -214,7 +210,7 @@
     <div class="resource github container"
     onmouseover="hover_resource(8)"
     onmouseout="stop_hover(8)">
-      <center><img src="resourceImgs/github.jpg" alt="" class="image"></center>
+      <center><img src="imgs/resourceImgs/github.jpg" alt="" class="image"></center>
       <div>
         <a href="https://github.com/"
         target="_blank" class="link"
@@ -232,7 +228,7 @@
     <div class="resource codewars container"
     onmouseover="hover_resource(9)"
     onmouseout="stop_hover(9)">
-      <center><img src="resourceImgs/codewars.jpg" alt="" class="image"></center>
+      <center><img src="imgs/resourceImgs/codewars.jpg" alt="" class="image"></center>
       <div>
         <a href="https://codewars.com/dashboard"
         target="_blank" class="link"
@@ -250,7 +246,7 @@
     <div class="resource newtonHack container"
     onmouseover="hover_resource(10)"
     onmouseout="stop_hover(10)">
-      <center><img src="resourceImgs/hacks.jpg" alt="" class="image"></center>
+      <center><img src="imgs/resourceImgs/hacks.jpg" alt="" class="image"></center>
       <div>
         <a href="https://nnhshacks.tech/"
         target="_blank" class="link"
@@ -268,7 +264,7 @@
     <div class="resource discord container "
     onmouseover="hover_resource(11)"
     onmouseout="stop_hover(11)">
-      <center><img src="resourceImgs/discord.jpg" alt="" class="image"></center>
+      <center><img src="imgs/resourceImgs/discord.jpg" alt="" class="image"></center>
       <div>
         <a href="https://discord.gg/dZ4RVNRQEm/"
         target="_blank" class="link"
@@ -286,7 +282,7 @@
     <div class="resource codingGround container "
     onmouseover="hover_resource(12)"
     onmouseout="stop_hover(12)">
-      <center><img src="resourceImgs/ground.jpg" alt="" class="image"></center>
+      <center><img src="imgs/resourceImgs/ground.jpg" alt="" class="image"></center>
       <div>
         <a href="https://www.tutorialspoint.com/execute_python_online.php"
           target="_blank" class="link"
@@ -328,7 +324,7 @@
   
   <!--GSap Animationnnns whooooohooooooo-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-  <script src="resources.js"></script>
+  <script src="js/resources.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
