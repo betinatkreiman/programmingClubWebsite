@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.91), rgba(255, 255, 255, 0.91)), URL("../imgs/fundraisingImgs/binary.jpg");
+  /* background-image: linear-gradient(rgba(255, 255, 255, 0.91), rgba(255, 255, 255, 0.91)), URL("../imgs/opportunitiesImgs/binary.jpg"); */
   /*background-repeat: no-repeat;*/
   background-attachment: fixed;
   background-size: cover;
