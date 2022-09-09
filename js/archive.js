@@ -60,7 +60,19 @@ gsap.to(".frenchsite", {
   opacity: 1.0
 })
 
-gsap.to(".game", {rotation: 0, x: 60, duration: 0, opacity: 0.2});
+gsap.to(".photographysite", {rotation: 0, x: 60, duration: 0, opacity: 0.2});
+gsap.to(".photographysite", {
+  scrollTrigger: {
+    trigger: ".photographysite",
+    toggleActions: "restart none none none"
+  },
+  x: 0,
+  rotation: 0,
+  duration: 2.5,
+  opacity: 1.0
+})
+
+gsap.to(".game", {rotation: 0, x: -60, duration: 0, opacity: 0.2});
 gsap.to(".game", {
   scrollTrigger: {
     trigger: ".game",
@@ -73,7 +85,7 @@ gsap.to(".game", {
 })
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.to(".oldWebsite", {rotation: 0, x: -60, duration: 0, opacity: 0.2});
+gsap.to(".oldWebsite", {rotation: 0, x: 60, duration: 0, opacity: 0.2});
 gsap.to(".oldWebsite", {
   scrollTrigger: {
     trigger: ".oldWebsite",
@@ -85,7 +97,7 @@ gsap.to(".oldWebsite", {
   opacity: 1.0
 })
 
-gsap.to(".podtalk", {rotation: 0, x: 60, duration: 0, opacity: 0.2});
+gsap.to(".podtalk", {rotation: 0, x: -60, duration: 0, opacity: 0.2});
 gsap.to(".podtalk", {
   scrollTrigger: {
     trigger: ".podtalk",
@@ -98,7 +110,7 @@ gsap.to(".podtalk", {
 })
 
 
-gsap.to(".luaGame", {rotation: 0, x: -60, duration: 0, opacity: 0.2});
+gsap.to(".luaGame", {rotation: 0, x: 60, duration: 0, opacity: 0.2});
 gsap.to(".luaGame", {
   scrollTrigger: {
     trigger: ".luaGame",
@@ -110,7 +122,7 @@ gsap.to(".luaGame", {
   opacity: 1.0
 })
 
-gsap.to(".tigerInsider", {rotation: 0, x: 60, duration: 0, opacity: 0.2});
+gsap.to(".tigerInsider", {rotation: 0, x: -60, duration: 0, opacity: 0.2});
 gsap.to(".tigerInsider", {
   scrollTrigger: {
     trigger: ".tigerInsider",
@@ -122,7 +134,7 @@ gsap.to(".tigerInsider", {
   opacity: 1.0
 })
 
-gsap.to(".dreamherSite", {rotation: 0, x: -60, duration: 0, opacity: 0.2});
+gsap.to(".dreamherSite", {rotation: 0, x: 60, duration: 0, opacity: 0.2});
 gsap.to(".dreamherSite", {
   scrollTrigger: {
     trigger: ".dreamherSite",
