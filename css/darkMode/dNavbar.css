@@ -1,0 +1,141 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(32, 33, 36) !important;
+}
+
+h1 {
+  font-size: 2em;
+  color: rgb(243, 243, 246) !important;
+}
+
+.nav {
+  text-align: center !important;
+}
+
+.navbar-brand {
+  color: rgb(243, 243, 246) !important;
+}
+
+a.nav-link {
+  color: rgb(243, 243, 246) !important;
+}
+
+
+
+.day {
+  color: darkgray;
+}
+
+.icons {
+  text-align: right;
+  color: rgb(127, 127, 127);
+  font-size: 2em;
+  width: 40%;
+  padding-right: 2%;
+
+}
+
+.icon {
+  margin-right: 2%;
+}
+
+.day:hover {
+  color: gray;
+}
+
+.night:hover {
+  color: rgb(127, 127, 127);
+  cursor: pointer;
+}
+
+.navbar-brand {
+  padding-left: 2%;
+}
+
+/* navbar {
+  padding-left: 2% !important;
+  padding-right: 2% !important;
+} */
+
+i {
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+}
+
+.pages {
+  width: 70%;
+}
+
+.bar {
+  width: 30%;
+}
+
+@media only screen and (max-width: 991px) {
+  .nav-link {
+    padding-left: 5% !important;
+  }
+
+  .dropdown-menu {
+    border: none !important;
+    background-color: rgb(32, 33, 36) !important;
+    padding-left: 5% !important;
+  }
+
+  /* .icons {
+    text-align: left !important;
+    padding-left: 4.5% !important;
+  } */
+  .icons {
+    text-align: left !important;
+    padding-left: 4.5%;
+  }
+
+  .pages {
+    width: 100% !important;
+  }
+
+  .navbar-toggler {
+    margin-right: 3%;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+
+  .navbar .nav-item:hover .nav-link {}
+
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+
+/* .nav-link:hover {
+  background-color: gray;
+} */
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(234, 142, 12);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(224, 132, 2)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  /* box-shadow: none !important; */
+  /* box-shadow: 10px 5px 5px red; */
+  color: rgb(224, 132, 02);
+}

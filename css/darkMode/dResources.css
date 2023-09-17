@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color:
+}
+
+
+.resourcesHeading {
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 2.3em;
+}
+
+.arrow_div{
+    color: rgb(234, 142, 12);
+}
+
+.arrow_div:hover {
+  color: rgb(224, 132, 02);
+}
+
+
+.resourcesList {
+  margin-left: auto;
+  margin-right: auto;
+  width: 65vw;
+  /* display: inline-block; */
+  margin-bottom: 15vh;
+  height: auto !important;
+}
+
+.footer {
+  height: 20vh;
+  width: 100wv;
+  color: white;
+  display: inline-block;
+}
+
+
+
+
+.arrow_div {
+  display: inline;
+}
+
+.more_arrow {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.resource {
+  width: 31.33% !important;
+  height: 540px;
+  padding: 0;
+  float: left;
+  margin-left: 1% !important;
+  margin-right: 1% !important;
+  margin-bottom: 2% !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .resource {
+    /* border-style: solid; */
+    width: 48% !important;
+    height: 540px;
+    padding: 0;
+    float: left;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .resource {
+    /* border-style: solid; */
+    width: 100% !important;
+    height: 540px;
+    padding: 0;
+    float: left;
+  }
+
+  .codingground {
+    margin-bottom: 5% !important;
+  }
+}
+
+/* 
+color: rgb(243, 243, 246) !important
+background-color: rgb(12, 12, 9) !important; */
+
+.resourceDisc {
+  /* text-align: justify; */
+  font-size: 1em;
+  color: rgb(243, 243, 246) !important;
+}
+
+
+.resource a {
+  text-decoration: none;
+}
+
+.readMore {
+  font-size: 1em;
+  padding: 10 10 0 10px;
+  color: rgb(234, 142, 12) !important;
+}
+
+.readMore:hover {
+  color: rgb(224, 132, 02);
+}
+
+
+.linkName {
+  font-size: 1.75em;
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 0.75vh;
+  color: rgb(243, 243, 246) !important;
+}
+
+.resourceImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 80%;
+  /* height: 250px; */
+}
+
+.euler {
+  border-radius: 20%;
+}
+
+
+.temp {
+  height: 10%;
+}
+
+.arr12 {
+  padding-bottom: 13vh;
+}
+
+.linkName:hover {
+  cursor: pointer;
+}
+
+.readMore:hover {
+  cursor: pointer;
+}

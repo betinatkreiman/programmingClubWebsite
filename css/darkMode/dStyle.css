@@ -1,0 +1,39 @@
+
+
+.mainTitle {
+  color: rgb(243, 243, 246) !important;
+  /* color: blue !important; */
+}
+
+
+.mainTitle {
+  /* border: 2px black solid; */
+  /* width: 40%; */
+  /* text-align: center; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  color: rgb(243, 243, 246);
+}
+
+.subHeading {
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(243, 243, 246);
+}
+
+.info {
+  /* text-align: left;
+  padding-left: 10% !important; */
+  text-align: center;
+  color: rgb(243, 243, 246);
+}
+
+.mainContent {
+  padding-top: 10%;
+  overflow: hidden;
+}
+
+img {
+  height: 50%;
+}

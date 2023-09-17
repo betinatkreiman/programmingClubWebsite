@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Meet the Team</title>
+  <link href="css/temp.css" rel="stylesheet" type="text/css" />
+  <link href="css/temp2.css" rel="stylesheet" type="text/css" />
+
+  <link href="css/navbar.css" rel="stylesheet" type="text/css" />
+  <link href="css/meet_the_team.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/jpg" href="imgs/f.jpg" />
+
+  <!-- font awespme -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<body id="bodyBG" class="lightBG">
+
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="index.html">Newton North Programming Club</a>
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="bar collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="pages">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item ">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+
+          <!--  dropID-->
+          <li id="dropdown" class="nav-item dropdown" data-bs-theme="light">
+            <a class="nav-link dropdown-toggle archiveDropDown" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Archive
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="archive.html">Gallery</a>
+              <a class="dropdown-item" href="archive/websites.html">Websites</a>
+              <a class="dropdown-item" href="archive/games.html">Games</a>
+              <a class="dropdown-item" href="archive/apps.html">Apps</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html"> FAQ </a>
+          </li>
+          <li class="nav-item">
+            <a class="text-dark  nav-link" href="meet_the_team.html"> Meet the Team </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="icons">
+
+        <a href="https://www.instagram.com/nnhsprogramming/" target=”_blank”> <i id="instagramID"
+            class="day icon follow fa-brands fa-instagram navIconf">
+          </i></a>
+
+        <a href="mailto:betina1620@gmail.com, isabelleosloan@gmail.com, eva.mescher@gmail.com, jennifer.yuzhen.li@gmail.com?cc=peloquina@newton.k12.ma.us"
+          target=”_blank”><i id="emailID" class="day icon fa-regular fa-envelope navIcon"></i></a>
+
+        <i id="switchID" class="day icon fa-regular fa-moon fa-fw" onclick="toggleTheme()"></i>
+
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+
+  <h1 class="meet_heading">Meet the Team!</h1>
+  <!-- MODAL -->
+
+
+
+  <div id="ShowOfficer" class="modal">
+    <div class="modal-content">
+      <div class="row">
+        <!-- <div>
+          <span id="CloseOfficer" class="close">&times;</span>
+        </div> -->
+        <div class="col-lg-4 col-md-6">
+          <!-- <div>
+            <span id="CloseOfficer_1" class="close">&times;</span>
+          </div> -->
+          <img id="ShowOfficer_ID" class="headshot modal_headshot img-fluid image" src="#" alt="#">
+        </div>
+        <div class="col-lg-8 col-md-6">
+          <div class="officer_text">
+            <!-- <div>
+              <span id="CloseOfficer_2" class="close">&times;</span>
+            </div> -->
+            <h1 class="h1 modal_name" id="ShowOfficer_Name">Name</h1>
+            <p class="o_text" id="ShowOfficer_Text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, delectus quod. Quae, placeat nostrum
+              officiis quaerat molestias quidem asperiores nihil! Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Nulla cumque eligendi veritatis, placeat autem, accusantium in molestiae assumenda, nemo ab qui
+              nesciunt. Ipsum, libero aspernatur. Laborum nam odio fuga suscipit quia ab velit, corrupti quaerat
+              architecto dolore obcaecati doloremque eaque?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+
+  <div class="officers text-center">
+
+    <div class="officerCard">
+      <div class="popUp" id="popUp" onclick="officerClick(1)">
+        <div class="officerImg">
+          <img class="officerHeadshot" onclick(officerClick(1)) id="betina" src="imgs/meet_the_team/betina.jpg"
+            alt="Betina Kreiman">
+          <div class="overlay">
+            Betina Kreiman
+          </div>
+        </div>
+        <div class="officerName">
+          Betina Kreiman
+        </div>
+      </div>
+
+      <div class="officerIcons">
+        <a href="https://www.instagram.com/betinakreiman/" target=”_blank”> <i
+            class="icon_officer follow fa-brands fa-instagram">
+          </i></a>
+        <a href="mailto:betina1620@gmail.com" target=”_blank”><i class="icon_officer fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="officerCard">
+      <div class="popUp" id="popUp" onclick="officerClick(2)">
+        <div class="officerImg">
+          <img class="officerHeadshot" onclick(officerClick(2)) id="jennifer" src="imgs/meet_the_team/jennifer.jpg"
+            alt="Jennifer Li">
+          <div class="overlay">
+            Jennifer Li
+          </div>
+        </div>
+        <div class="officerName">
+          Jennifer Li
+        </div>
+      </div>
+      <div class="officerIcons">
+        <a href="https://www.instagram.com/jenniferlli_/" target=”_blank”> <i
+            class="icon_officer follow fa-brands fa-instagram">
+          </i></a>
+        <a href="mailto:jennifer.yuzhen.li@gmail.com" target=”_blank”><i
+            class="icon_officer fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="officerCard">
+      <div class="popUp" id="popUp" onclick="officerClick(3)">
+        <div class="officerImg">
+          <img class="officerHeadshot" onclick(officerClick(3)) id="isabelle" src="imgs/meet_the_team/isabelle.jpg"
+            alt="Isabelle Sloan">
+          <div class="overlay">
+            Isabelle Sloan
+          </div>
+        </div>
+        <div class="officerName">
+          Isabelle Sloan
+        </div>
+      </div>
+      <div class="officerIcons">
+        <a href="https://www.instagram.com/isabelleosloan/" target=”_blank”> <i
+            class="icon_officer follow fa-brands fa-instagram">
+          </i></a>
+        <a href="mailto:isabelleosloan@gmail.com" target=”_blank”><i
+            class="icon_officer fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="officerCard ">
+      <div class="popUp" id="popUp" onclick="officerClick(4)">
+        <div class="officerImg">
+          <img class="officerHeadshot" onclick(officerClick(4)) id="eva" src="imgs/meet_the_team/eva.jpg"
+            alt="Eva Mescher">
+          <div class="overlay">
+            Eva Mescher
+          </div>
+        </div>
+        <div class="officerName">
+          Eva Mescher
+        </div>
+      </div>
+      <div class="officerIcons">
+        <a href="https://www.instagram.com/evamescher/" target=”_blank”> <i
+            class="icon_officer follow fa-brands fa-instagram">
+          </i></a>
+        <a href="mailto:eva.mescher@gmail.com" target=”_blank”><i class="icon_officer fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="officerCard">
+      <div class="popUp" id="popUp" onclick="officerClick(5)">
+        <div class="officerImg">
+          <img class="officerHeadshot" onclick(officerClick(5)) id="peloquin" src="imgs/meet_the_team/adam.jpg"
+            alt="Mr.Peloquin">
+          <div class="overlay">
+            Mr.Peloquin
+          </div>
+        </div>
+        <div class="officerName">
+          Mr.Peloquin
+        </div>
+      </div>
+      <div class="officerIcons">
+        <a onclick="open_peloquin()" href="https://chooseadventure.bkreiman.repl.co/" target=”_blank”> <i
+            class="icon_officer follow fa-brands fa-instagram">
+          </i></a>
+        <a href="mailto:peloquina@newton.k12.ma.us" target=”_blank”><i
+            class="icon_officer fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="members text-center pt-4 pb-5">
+    <h1 class="text-center memberHeading">Club Members</h1>
+    <button id="btn0" type="button" class="btn btn-outline-secondary" onclick="memberClick(0)">Name</button>
+    <button id="btn1" type="button" class="btn btn-outline-secondary" onclick="memberClick(1)">Name</button>
+    <button id="btn2" type="button" class="btn btn-outline-secondary" onclick="memberClick(2)">Name</button>
+    <button id="btn3" type="button" class="btn btn-outline-secondary" onclick="memberClick(3)">Name</button>
+    <button id="btn4" type="button" class="btn btn-outline-secondary" onclick="memberClick(4)">Name</button>
+    <button id="btn5" type="button" class="btn btn-outline-secondary" onclick="memberClick(5)">Name</button>
+    <button id="btn6" type="button" class="btn btn-outline-secondary" onclick="memberClick(6)">Name</button>
+    <button id="btn7" type="button" class="btn btn-outline-secondary" onclick="memberClick(7)">Name</button>
+    <button id="btn8" type="button" class="btn btn-outline-secondary" onclick="memberClick(8)">Name</button>
+    <button id="btn9" type="button" class="btn btn-outline-secondary" onclick="memberClick(9)">Name</button>
+    <button id="btn10" type="button" class="btn btn-outline-secondary" onclick="memberClick(10)">Name</button>
+    <button id="btn11" type="button" class="btn btn-outline-secondary" onclick="memberClick(11)">Name</button>
+    <button id="btn12" type="button" class="btn btn-outline-secondary" onclick="memberClick(12)">Name</button>
+    <button id="btn13" type="button" class="btn btn-outline-secondary" onclick="memberClick(13)">Name</button>
+    <button id="btn14" type="button" class="btn btn-outline-secondary" onclick="memberClick(14)">Name</button>
+    <button id="btn15" type="button" class="btn btn-outline-secondary" onclick="memberClick(15)">Name</button>
+    <button id="btn16" type="button" class="btn btn-outline-secondary" onclick="memberClick(16)">Name</button>
+    <button id="btn17" type="button" class="btn btn-outline-secondary" onclick="memberClick(17)">Name</button>
+    <button id="btn18" type="button" class="btn btn-outline-secondary" onclick="memberClick(18)">Name</button>
+    <button id="btn19" type="button" class="btn btn-outline-secondary" onclick="memberClick(19)">Name</button>
+    <button id="btn20" type="button" class="btn btn-outline-secondary" onclick="memberClick(20)">Name</button>
+    <!-- <button id="btn21" type="button" class="btn btn-outline-secondary" onclick="memberClick(21)">Name</button>
+    <button id="btn22" type="button" class="btn btn-outline-secondary" onclick="memberClick(22)">Name</button> -->
+  </div>
+
+
+
+
+  <script src="js/meet_the_team.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+
+  <!--GSap Animationnnns whooooohooooooo-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+  <!-- bootstrap + hamburger!!!! -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

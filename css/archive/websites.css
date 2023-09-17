@@ -1,0 +1,88 @@
+.project {
+  height: auto;
+  margin: auto;
+  width: 70%;
+
+  background-color: white;
+  text-align: left;
+  margin-bottom: 2%;
+  border-radius: 50px;
+
+}
+
+.h1 {
+  text-align: center;
+}
+
+.row {
+  vertical-align: middle;
+}
+
+.AllProjects {
+  padding: 3% 5% 5% 5%;
+}
+
+p.name {
+  margin-bottom: 0 !important;
+}
+
+.name {
+  font-weight: 300;
+  font-size: 22pt;
+  padding: 3% 4% 0% 5%;
+}
+
+.row {
+  padding: 2% 4% 5% 5%;
+}
+
+.description {
+  text-align: left;
+}
+
+.ProjImg {
+  border-radius: 7%;
+  width: 100%;
+  padding: 0.5px;
+  top: 50%;
+
+}
+
+/* .text {
+  background-color: white;
+}
+
+.picture {
+  background-color: white;
+} */
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+
+  .navbar .nav-item:hover .nav-link {}
+
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+
+.proj {
+  text-align: center;
+}
+
+.project_button {
+  background-color: white;
+  display: inline-block;
+  border-radius: 45%;
+  padding: 0.8%;
+  text-decoration: none;
+  margin: 5px;
+  color: rgb(47, 47, 51);
+  /* width: max-content; */
+}

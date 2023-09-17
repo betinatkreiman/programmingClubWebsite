@@ -1,86 +1,237 @@
- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <title>FAQ</title>
+  <link href="css/temp.css" rel="stylesheet" type="text/css" />
+  <link href="css/temp2.css" rel="stylesheet" type="text/css" />
 
-  <!-- boostrap link  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/faq.css">
+  <link href="css/navbar.css" rel="stylesheet" type="text/css" />
+  <link href="css/faq.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/jpg" href="imgs/f.jpg" />
 
-    <!-- Favicon Link -->
-    <link rel="shortcut icon" type="image/jpg" href="imgs/favicon.jpg"/>
+  <!-- font awespme -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
 </head>
-<body>
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light pl-5">
-        <a class="navbar-brand p-5 pt-3 pb-3" href="index.html">Newton North Programming Club</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body id="bodyBG" class="lightBG">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="resources.html"> Resources </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="archive.html"> Archive </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="faq.html"> FAQ </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="opportunities.html"> Opportunities </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about_us.html"> About Us </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <h1 class="h1 text-center p-3">FAQ</h1>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="index.html">Newton North Programming Club</a>
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="bar collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="pages">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item ">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+
+          <!--  dropID-->
+          <li id="dropdown" class="nav-item dropdown" data-bs-theme="light">
+            <a class="nav-link dropdown-toggle archiveDropDown" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Archive
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="archive.html">Gallery</a>
+              <a class="dropdown-item" href="archive/websites.html">Websites</a>
+              <a class="dropdown-item" href="archive/games.html">Games</a>
+              <a class="dropdown-item" href="archive/apps.html">Apps</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="text-dark  nav-link" href="faq.html"> FAQ </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="meet_the_team.html"> Meet the Team </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="icons">
+
+        <a href="https://www.instagram.com/nnhsprogramming/" target=”_blank”> <i id="instagramID"
+            class="day icon follow fa-brands fa-instagram navIconf">
+          </i></a>
+
+        <a href="mailto:betina1620@gmail.com, isabelleosloan@gmail.com, eva.mescher@gmail.com, jennifer.yuzhen.li@gmail.com?cc=peloquina@newton.k12.ma.us"
+          target=”_blank”><i id="emailID" class="day icon fa-regular fa-envelope navIcon"></i></a>
+
+        <i id="switchID" class="day icon fa-regular fa-moon fa-fw" onclick="toggleTheme()"></i>
+
+
+      </div>
     </div>
-    <div class="question1 p-4">
-      
+
+
+
+  </nav>
+
+  <!-- content -->
+  <div class="faqHeading">
+    <h1>FAQ</h1>
+    <h3 class="burning">We've got answers for your burning questions.</h3>
+  </div>
+
+  <div class=" questions">
+    <div class=" qCard box1" onmouseover="move_up(1)" onmouseout="move_back(1)">
       <h5>When do we meet?</h5>
       <p>Mondays after school in room 369!</p>
-
-      <h5>Who is the advisor?</h5>
-      <p>Mr.Peloquin (He teaches math at North)</p>
-
-      <h5>What are our goals for the year?</h5>
-      <p>Our goal for the programming club this year is to create a fun environment where students can learn to code and be amongst a community of coders and creative thinkers. Projects can consist of making websites or games for organizations or just doing individual projects together as a group.</p>
-
-      <h5>Do I need any experience?</h5>
-      <p>No! Everybody is welcome to join! There is no experience needed!</p>
-
-      <h5>What happens if I already know how to code?</h5>
-      <p>That’s great! We would love to have you in the club, we will work on lots of different projects and you can help us to work on the harder parts. This can also be a space to work on your personal projects and talk them through with others.</p>
-
-      <h5>Do you know of any cool coding opportunities for me?</h5>
-      <p>Yes! Check out our opportunities page with tons of different coding programs!</p>
-
-      <h5>Want to join!</h5>
-      <p>We'll add you to the email
-        <a href="https://forms.gle/x7uEkrhn8R2xDUuDA">list.</a>
-      </p>
-
-      <h5>Have questions?</h5>
-      <p>Fill out this
-        <a href="https://forms.gle/jRcw1pPJTrKuNsTu7">form.</a>
-      </p>
-
-      
-        
-
+    </div>
+    <div class=" qCard box2" onmouseover="move_up(2)" onmouseout="move_back(2)">
+      <h5>What if I already know how to code?</h5>
+      <p>That’s great! We'd still love to have you in the club. The club is also a space for you to help others and work
+        on your personal projects.</p>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div class="qCard box3" onmouseover="move_up(3)" onmouseout="move_back(3)">
+      <h5>Do I need any experience?</h5>
+      <p>No! Everybody is welcome to join! There is no experience needed!</p>
+    </div>
+    <div class="qCard box4" onmouseover="move_up(4)" onmouseout="move_back(4)">
+      <h5>What are our goals for the year?</h5>
+      <p>
+      <ol>
+        <li>Have fun</li>
+        <li>Make cool projects</li>
+        <li>Create safe community</li>
+        <li>Eat good food</li>
+      </ol>
+      </p>
+    </div>
+    <div class="qCard box5" onmouseover="move_up(5)" onmouseout="move_back(5)" onclick="open_peloquin()">
+      <h5>Who is the advisor?</h5>
+      <p>Mr.Peloquin (He teaches math at North).</p>
+    </div>
+
+    <div class="qCard box6" onmouseover="move_up(6)" onmouseout="move_back(6)">
+      <h5>What does the club do?</h5>
+      <p>You meet other coders, make apps, make games, make websites, attend workshops, and play trivia. Most
+        importantly, we eat
+        lots of snacks, dressed in our cool merch!</p>
+    </div>
+  </div>
+
+
+
+
+  <!-- services! -->
+  <div class="serviceSection">
+    <div class="row g-0">
+      <!--         first column "get in Touch" -->
+      <div class="col-md-4 serviceHeading ">
+        <h1 class="title">Interested in our services? <br></br>We can make it for you.</h1>
+      </div>
+      <!--         Second column = form -->
+      <div class="col-md-8">
+        <div class="oval">
+
+          <form action="https://formsubmit.co/betina1620@gmail.com" method="POST">
+            <div class="row formRow">
+              <div class="col-md-6 col-sm">
+                <label for="FirstNme" class="serviceFormLabel">First Name *</label>
+                <input type="text" id="FirstName" class="serviceFormInput notText" name="First Name" required>
+              </div>
+              <div class="col-md-6 col-sm">
+                <label for="LastName" class="serviceFormLabel">Last Name *</label>
+                <input class="serviceFormInput notText" type="text" id="LastName" name="Last Name" required>
+              </div>
+            </div>
+            <div class="row formRow">
+              <div class="col-12">
+                <label for="email" class="serviceFormLabel">Email *</label>
+                <input class="serviceFormInput notText" type="email" class="" id="email" name="Email" required>
+              </div>
+            </div>
+
+            <div class="row formRow">
+              <div class="col-12">
+                <label for="service" class="serviceFormLabel">What are you interested in? *</label>
+                <select class="serviceFormInput webSiteOption" id="services" name="service" required>
+                  <option value="website">Website</option>
+                  <option value="game">Game</option>
+                  <option value="app">App</option>
+                  <option value="other">Other (The world is your oyster!!!)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row formRow">
+              <div class="col">
+                <label for="" class="serviceFormLabel">Additional comments?</label>
+                <textarea class=" serviceFormInput textAreaInput" class="" id="textAreaExample1" rows=""
+                  name="Message"></textarea>
+              </div>
+            </div>
+
+            <div class=" formRow">
+              <button class="servicesendBtn serviceFormInput">Send</button>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://nnhsprogramming.com/faq.html">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--   sign up for email list -->
+
+  <div class="SignUp">
+    <h5 class="Heading">Sign up for our email list!</h5>
+    <div class="Form">
+      <form class="row form1" action="https://formsubmit.co/betina1620@gmail.com" method="POST">
+        <input class="formcontent update emailListBorder col-10" placeholder="email@example.com" type="email"
+          name="Email" required>
+        </input>
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://nnhsprogramming.com/faq.html">
+
+        <button class="joinBtn border col-2" type="submit">
+          Join
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+
+
+  <script src="js/faq.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+
+  <!--GSap Animationnnns whooooohooooooo-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+  <!-- bootstrap + hamburger!!!! -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>

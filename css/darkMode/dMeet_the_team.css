@@ -1,0 +1,224 @@
+.meet_heading {
+  text-align: center;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
+.officers {
+  width: 100%;
+  /* display: inline-flex; */
+
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+  /* width: 100%;
+  display: inline-flex; */
+
+  font-size: 0;
+
+
+  /* display:flex; */
+  /* flex-direction: row; */
+  /* display: flex; */
+  position: relative;
+}
+
+.officerIcons {
+  padding-top: 1.5%;
+}
+
+.icon_officer {
+  font-size: 1.5em;
+  padding: 1.5%;
+  color: rgb(234, 142, 12);
+}
+
+.icon_officer:hover {
+  color: rgb(224, 132, 02);
+}
+
+.officerCard {
+  /* width: 16.5%; */
+  width: 16.5%;
+  text-align: center;
+  margin-left: 1.75%;
+  margin-right: 1.75%;
+  margin-bottom: 1.75%;
+  height: auto;
+  overflow: hidden;
+
+
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.officerImg {
+  position: relative;
+}
+
+.officerHeadshot {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.overlay {
+  opacity: 0;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+.officerImg:hover {
+  opacity: 0.5;
+
+}
+
+.officerImg:hover .overlay {
+  opacity: 1;
+  z-index: 1;
+}
+
+
+.officerName {
+  font-size: 1.6em;
+  padding-top: 2%;
+  color: rgb(243, 243, 246) !important;
+}
+
+
+
+/* modal stuff  */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+
+  overflow: auto;
+  /* Enable scroll if needed */
+  /* background-color: rgb(0, 0, 0); */
+  /* background-color: rgb(200, 200, 200); */
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: rgb(53, 54, 58) !important;
+  /* background-color: red !important; */
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80% !important;
+  height: auto;
+}
+
+.o_text {
+  color: rgb(243, 243, 246) !important;
+}
+
+.modal_headshot {
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 4px !important;
+  padding-right: 25px !important;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+}
+
+.close:hover {
+  cursor: grab;
+}
+
+#CloseOfficer_1 {
+  display: none;
+}
+
+#CloseOfficer_2 {
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  #CloseOfficer_1 {
+    display: block;
+  }
+
+  #CloseOfficer_2 {
+    display: none;
+  }
+}
+
+.btn {
+  margin-top: 3px;
+
+  color: rgb(158, 158, 158) !important;
+  border-color: rgb(158, 158, 158);
+}
+
+.members {
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
+
+.memberHeading {
+  padding-top: 1vh;
+  padding-bottom: 5vh;
+}
+
+
+/* sizing stuff */
+
+@media only screen and (max-width: 1200px) {
+
+  /* 3 and 2 */
+  .officerCard {
+    width: 28%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  /* 2 and 2 and 1*/
+  .officerCard {
+    width: 43%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* 1 */
+  .officerCard {
+    /* height: 80%; */
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6%;
+  }
+}
+
+.officerCard:hover {
+  cursor: pointer;
+}

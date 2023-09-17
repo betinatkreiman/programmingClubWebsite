@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Apps</title>
+  <link href="../css/temp.css" rel="stylesheet" type="text/css" />
+  <link href="../css/temp2.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/navbar.css" rel="stylesheet" type="text/css" />
+  <link href="../css/archive/websites.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/jpg" href="../imgs/f.jpg" />
+
+  <!-- font awespme -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<body id="bodyBG" class="lightBG">
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="../index.html">Newton North Programming Club</a>
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="bar collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="pages">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item ">
+            <a class="nav-link" href="../resources.html">Resources</a>
+          </li>
+
+          <!--  dropID-->
+          <li id="dropdown" class="nav-item dropdown" data-bs-theme="light">
+            <a class="nav-link dropdown-toggle archiveDropDown" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Archive
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../archive.html">Gallery</a>
+              <a class="dropdown-item" href="websites.html">Websites</a>
+              <a class="dropdown-item" href="games.html">Games</a>
+              <a class="dropdown-item" href="apps.html">Apps</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../faq.html"> FAQ </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../meet_the_team.html"> Meet the Team </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="icons">
+
+        <a href="https://www.instagram.com/nnhsprogramming/" target=”_blank”> <i id="instagramID"
+            class="day icon follow fa-brands fa-instagram navIconf">
+          </i></a>
+
+        <a href="mailto:betina1620@gmail.com, isabelleosloan@gmail.com, eva.mescher@gmail.com, jennifer.yuzhen.li@gmail.com?cc=peloquina@newton.k12.ma.us"
+          target=”_blank”><i id="emailID" class="day icon fa-regular fa-envelope navIcon"></i></a>
+
+        <i id="switchID" class="day icon fa-regular fa-moon fa-fw" onclick="toggleTheme()"></i>
+
+
+      </div>
+    </div>
+
+
+
+  </nav>
+
+
+  <!-- main content -->
+  <h1 class="h1">Apps</h1>
+
+  <!-- <div class="proj">
+    <div class="projects">
+      <a class="project_button" href="../archive.html">Gallery</a>
+      <a class="project_button" href="archive/websites.html">Websites</a>
+      <a class="project_button" href="archive/games.html">Games</a>
+
+    </div>
+  </div> -->
+
+  <!-- TEMPLATE -->
+  <!-- <div class="project" onmouseover="hover_resource(1)" onclick="click_resource(1)" onmouseout="stop_hover(1)">
+      <p class="name" id="projectName1">Project Name</p>
+      <div class="row ">
+        <div class="col-lg-9 col-md-12 text">
+          <p class="description">Project Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+            beatae
+            dolore ratione? Iure vel quaerat sed, esse illum magni. Vitae cupiditate qui iste accusantium ut iure,
+            facere,
+            minus nostrum, in aliquid culpa laudantium veniam possimus officia repellat debitis quisquam autem.</p>
+        </div>
+        <div class="col-lg-3 col-md-12 picture">
+          <img class="ProjImg" src="../imgs/archive/2048.jpg" alt="">
+        </div>
+      </div>
+    </div> -->
+
+
+  <div class="AllProjects">
+    <div class="project" onmouseover="hover_resource(1)" onclick="click_resource(1)" onmouseout="stop_hover(1)">
+      <p class="name" id="projectName1">Orbit</p>
+      <div class="row ">
+        <div class="col-lg-9 col-md-12 text">
+          <p class="description">A neat scroller app game to play when class gets boring. We used swift/xcode and even
+            made the music with garage band. It's now relased in the app store!</p>
+        </div>
+        <div class="col-lg-3 col-md-12 picture">
+          <img class="ProjImg" src="../imgs/archive/orbit2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="project" onmouseover="hover_resource(2)" onclick="click_resource(2)" onmouseout="stop_hover(2)">
+      <p class="name" id="projectName2">North Parking Availability</p>
+      <div class="row ">
+        <div class="col-lg-9 col-md-12 text">
+          <p class="description">The Newton North Parking Availability App is a great way for students to find parking
+            around the school. Most kids with their license are aware of the chaos and disorder there is around North
+            when trying to find parking. The app is a great way to locate parking easily and quickly.</p>
+        </div>
+        <div class="col-lg-3 col-md-12 picture">
+          <img class="ProjImg" src="../imgs/archive/northParking.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="project" onmouseover="hover_resource(3)" onclick="click_resource(3)" onmouseout="stop_hover(3)">
+      <p class="name" id="projectName3">Podtalk</p>
+      <div class="row ">
+        <div class="col-lg-9 col-md-12 text">
+          <p class="description">A poscast app for ios. They also had merch for sale to advertise for the club! Was
+            published on app store and was a huge hit!</p>
+        </div>
+        <div class="col-lg-3 col-md-12 picture">
+          <img class="ProjImg" src="../imgs/archive/podtalk.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="../js/archive/apps.js"></script>
+  <!-- <script src="../js/script.js"></script> -->
+
+  <!--GSap Animationnnns whooooohooooooo-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+  <!-- bootstrap + hamburger!!!! -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

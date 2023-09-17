@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Websites</title>
+  <link href="../css/temp.css" rel="stylesheet" type="text/css" />
+  <link href="../css/temp2.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/navbar.css" rel="stylesheet" type="text/css" />
+  <link href="../css/archive/websites.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/jpg" href="../imgs/f.jpg" />
+
+  <!-- font awespme -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<body id="bodyBG" class="lightBG">
+
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="../index.html">Newton North Programming Club</a>
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="bar collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="pages">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item ">
+            <a class="nav-link" href="../resources.html">Resources</a>
+          </li>
+
+          <!--  dropID-->
+          <li id="dropdown" class="nav-item dropdown" data-bs-theme="light">
+            <a class="nav-link dropdown-toggle archiveDropDown" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Archive
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../archive.html">Gallery</a>
+              <a class="dropdown-item" href="websites.html">Websites</a>
+              <a class="dropdown-item" href="games.html">Games</a>
+              <a class="dropdown-item" href="apps.html">Apps</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../faq.html"> FAQ </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../meet_the_team.html"> Meet the Team </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="icons">
+
+        <a href="https://www.instagram.com/nnhsprogramming/" target=”_blank”> <i id="instagramID"
+            class="day icon follow fa-brands fa-instagram navIconf">
+          </i></a>
+
+        <a href="mailto:betina1620@gmail.com, isabelleosloan@gmail.com, eva.mescher@gmail.com, jennifer.yuzhen.li@gmail.com?cc=peloquina@newton.k12.ma.us"
+          target=”_blank”><i id="emailID" class="day icon fa-regular fa-envelope navIcon"></i></a>
+
+        <i id="switchID" class="day icon fa-regular fa-moon fa-fw" onclick="toggleTheme()"></i>
+
+
+      </div>
+    </div>
+
+
+
+  </nav>
+
+
+  <!-- main content -->
+  <h1 class="h1">Websites</h1>
+  <!-- <div class="proj">
+    <div class="projects">
+      <a class="project_button" href="../archive.html">Gallery</a>
+      <a class="project_button" href="archive/games.html">Games</a>
+      <a class="project_button" href="archive/apps.html">Apps</a>
+
+    </div>
+  </div> -->
+
+  <!-- TEMPLATE -->
+  <!-- <div class="project" onmouseover="hover_resource(1)" onclick="click_resource(1)" onmouseout="stop_hover(1)">
+      <p class="name" id="projectName1">Project Name</p>
+      <div class="row ">
+        <div class="col-lg-9 col-md-12 text">
+          <p class="description">Project Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+            beatae
+            dolore ratione? Iure vel quaerat sed, esse illum magni. Vitae cupiditate qui iste accusantium ut iure,
+            facere,
+            minus nostrum, in aliquid culpa laudantium veniam possimus officia repellat debitis quisquam autem.</p>
+        </div>
+        <div class="col-lg-3 col-md-12 picture">
+          <img class="ProjImg" src="../imgs/archive/2048.jpg" alt="">
+        </div>
+      </div>
+    </div> -->
+
+
+  <div class="AllProjects">
+    <div class="project" onmouseover="hover_resource(1)" onclick="click_resource(1)" onmouseout="stop_hover(1)">
+      <p class="name" id="projectName1">Educational Excellence Campaign</p>
+      <div class="row ">
+        <div class="col-lg-9 col-md-12 text">
+          <p class="description">This website is for the Educational Excellence Campaign that advocates for the raising
+            of money for physics materials at the high school of Newton North. Using bootstrap, w3schools, GSAP, and
+            many other prominent libraries of greatness, this website is both visually and mentally pleasing. We
+            incentivize you to constantly reload the page and admire the beautiful animation. Have a wonderful day and
+            do not forget to donate to the Educational Excellence Campaign!</p>
+        </div>
+        <div class="col-lg-3 col-md-12 picture">
+          <img class="ProjImg" src="../imgs/archive/edexcampaign.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="project" onmouseover="hover_resource(2)" onclick="click_resource(2)" onmouseout="stop_hover(2)">
+      <p class="name" id="projectName2">Sustainability Club</p>
+      <div class="row ">
+        <div class="col-lg-9 col-md-12 text">
+          <p class="description">The Newton North Sustainability Club is another group of wonderful humans that received
+            a marvelous website from us. We strategically and mathematically calculated the rgb values of the colors on
+            this site to complement the authentic design made by the sustainable dev. team. With forms that actually
+            work and padding that pleases the eye, a smile is guaranteed to come to your face when you visit this
+            website. Enjoy and be sustainable!</p>
+        </div>
+        <div class="col-lg-3 col-md-12 picture">
+          <img class="ProjImg" src="../imgs/archive/Sustainability.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="project" onmouseover="hover_resource(3)" onclick="click_resource(3)" onmouseout="stop_hover(3)">
+      <p class="name" id="projectName3">French Club</p>
+      <div class="row ">
+        <div class="col-lg-9 col-md-12 text">
+          <p class="description">The French Club is another club at North that the Programming Club made a site for! We
+            used Bootstrap and brilliant thinking to artistically craft a pleasing and visually appealing site that
+            greatly benefits the French Club. Au revoir!</p>
+        </div>
+        <div class="col-lg-3 col-md-12 picture">
+          <img class="ProjImg" src="../imgs/archive/french.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="project" onmouseover="hover_resource(4)" onclick="click_resource(4)" onmouseout="stop_hover(4)">
+      <p class="name" id="projectName4">Photography Club</p>
+      <div class="row ">
+        <div class="col-lg-9 col-md-12 text">
+          <p class="description">The cinematic and innovative design applied to this high-end website was created after
+            long nights of debugging and frustration. Intentionally articulated to display the first-rate creation of
+            our dear partners, the Newton North High School Photography Club, this site provides our audience with a
+            memorable experience, which is once in a lifetime. Using bootstrap and hard work, the Programming Club put
+            together another beautiful website. We hope you thoroughly enjoy!</p>
+        </div>
+        <div class="col-lg-3 col-md-12 picture">
+          <img class="ProjImg" src="../imgs/archive/photography.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="project" onmouseover="hover_resource(5)" onclick="click_site()" onmouseout="stop_hover(5)">
+      <p class="name" id="projectName5">Old Club Website</p>
+      <div class="row ">
+        <div class="col-lg-9 col-md-12 text">
+          <p class="description">After the pandemic, the club decided it wanted to entirely redo the website (taking
+            ideas from the old website). We completely redid it trying to add the most useful information possible while
+            still making it cool and modern. Then, we had another epiphany and decided to redo everything once again. As time evolves, so does the Programming Club. Darwin was right all along.</p>
+        </div>
+        <div class="col-lg-3 col-md-12 picture">
+          <img class="ProjImg" src="../imgs/archive/old.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="project" onmouseover="hover_resource(6)" onclick="click_resource(6)" onmouseout="stop_hover(6)">
+      <p class="name" id="projectName6">Tiger Insider</p>
+      <div class="row ">
+        <div class="col-lg-9 col-md-12 text">
+          <p class="description">The Tiger Insider website uses the bootstrap CSS framework and silverstripe PHP for the
+            backend. The club created some graphics to slap on the website and hired a gfx artist online to create an
+            article placeholder banner. We like to use our own code, so bootstrap CSS was the optimal way in efficiency
+            and creativity.</p>
+        </div>
+        <div class="col-lg-3 col-md-12 picture">
+          <img class="ProjImg" src="../imgs/archive/tigerInsider.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="project" onmouseover="hover_resource(7)" onclick="click_resource(7)" onmouseout="stop_hover(7)">
+      <p class="name" id="projectName7">Dreamher Charity</p>
+      <div class="row ">
+        <div class="col-lg-9 col-md-12 text">
+          <p class="description">The website made for Dreamher Charity was also created with bootstrap to create a
+            better user-interface. This site was created for an organization. We hope to continue helping out charities
+            near us by creating websites and games.</p>
+        </div>
+        <div class="col-lg-3 col-md-12 picture">
+          <img class="ProjImg" src="../imgs/archive/adam.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="../js/archive/websites.js"></script>
+  <!-- <script src="../js/script.js"></script> -->
+
+  <!--GSap Animationnnns whooooohooooooo-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+  <!-- bootstrap + hamburger!!!! -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

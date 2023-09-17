@@ -1,32 +1,290 @@
-body{
-  text-align: center;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), URL("../imgs/tigerOrange.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-size: 40%;
-  background-position: center;
-  background-position-x: center;
-  background-position-y: 60%;  
+body {
+  padding-bottom: 6vh;
 }
 
-.question1 {
+.faqHeading {
+  text-align: center;
+  /* margin: 10 0;
+  display: block; */
+}
+
+.faqHeading h1 {
+  display: block;
+  padding: 4vh;
+  margin-bottom: 0;
+}
+
+.faqHeading h3 {
+  padding-bottom: 4vh;
+  font-size: 1.25em;
+  font-weight: 250;
+}
+
+.qCard {
+  width: 31.33%;
+  height: 275px;
+  float: left;
+  margin-left: 1% !important;
+  margin-right: 1% !important;
+  margin-bottom: 3% !important;
+  margin-top: 1% !important;
+
+  background-color: white;
+  box-shadow: 2px;
+  border-color: rgb(211, 211, 211);
+  border-radius: 1.5%;
+  border-style: solid;
+  border-width: 1.5px;
+
+  padding-top: 3vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  padding-bottom: 3vh;
+}
+
+.qCard h5 {
+  background-color: white;
+  font-weight: 600;
+}
+
+.qCard p {
+  background-color: white;
+  font-weight: 200;
+}
+
+.qCard ol {
+  font-weight: 200;
+}
+
+.questions {
+  height: auto;
+  padding-bottom: 10vh;
+
+  margin-left: 17.5% !important;
+  margin-right: 17.5% !important;
+
+  width: 65vw;
+  display: inline-block;
+
+
+}
+
+.forms {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 1vw;
+  padding-top: 1vw;
+
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+
+  background-color: white;
+  border-color: rgb(211, 211, 211);
+  border-radius: 1.5%;
+  border-style: solid;
+  border-width: 1.5px;
+
+}
+
+.box {
+  height: 5vh;
+}
+
+
+
+
+.serviceHeading {
+  text-align: center;
+  padding-top: 15%;
+  padding-bottom: 15%;
+
+  color: rgba(0, 0, 0, 0.75);
+  background-color: white;
+}
+
+.title {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 2.3em;
+}
+
+.serviceFormInput {
+  width: 100%;
+  border: none;
+  background: rgb(211, 211, 211);
+  border-bottom: 1px solid black;
   text-align: left;
 }
 
-@media only screen and (max-width: 425px){
-  .navbar{
-    display: block !important;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.formRow {
+  padding-bottom: 2%;
+}
+
+.servicesendBtn {
+  height: auto;
+  width: 100%;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  text-align: center;
+  border: none;
+  background: rgb(211, 211, 211);
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgb(51 51 51);
+}
+
+.textAreaInput {
+  resize: none;
+  /* height: 130px; */
+}
+
+
+.serviceFormLabel {
+  font-size: 0.87rem;
+  font-weight: 220;
+}
+
+.oval {
+  background-color: white;
+  border-radius: 25px;
+  text-align: start;
+  padding: 10vh 3vh;
+  margin: 5vh 5vh;
+  box-sizing: border-box;
+
+
+}
+
+.col-md-8 {
+  background-color: rgb(243, 243, 246);
+
+}
+
+
+/* Sign Up for Updates Section */
+
+.SignUp {
+  /* border-top: solid white;
+  border-top-width: 10px; */
+  border-top: solid 10px white;
+  height: auto;
+  background: rgb(243, 243, 246);
+  text-align: center;
+  padding-bottom: 1vh;
+}
+
+.Heading {
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.75);
+  padding-top: 4vh;
+  padding-bottom: 1.5vh;
+  /* color: blue; */
+}
+
+
+.joinBtn {
+  background-color: rgb(211, 211, 211);
+  border-style: 2px solid black;
+  font-size: 90%;
+  text-align: center;
+  margin-top: 3vh;
+  color: rgb(51 51 51);
+  font-weight: 300;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.form1 {
+  padding-right: 23%;
+  padding-left: 23%;
+
+}
+
+.update {
+  background: none;
+  height: 45px;
+}
+
+::placeholder {
+  color: rgb(15, 15 15, );
+  font-size: 0.9rem;
+
+}
+
+
+.notText {
+  height: 4vh;
+}
+
+.formcontent {
+  width: 100%;
+  border: none;
+  background: rgb(211, 211, 211);
+  /* border-bottom: 1px solid black; */
+  text-align: left;
+}
+
+.serviceSection {
+  border-top: solid 10px white;
+  
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .qCard {
+    width: 48% !important;
+    height: 275px;
+    float: left;
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+    margin-bottom: 3% !important;
+    margin-top: 1% !important;
+
+    background-color: white;
+    box-shadow: 2px;
+    border-color: rgb(211, 211, 211);
+    border-radius: 1.5%;
+    border-style: solid;
+    border-width: 1.5px;
+
+    padding-top: 3vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-bottom: 3vh;
   }
-  .nav{
-    display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .qCard {
+    width: 100% !important;
+    /* height: auto; */
+    height: 275px;
+    float: left;
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+    margin-bottom: 3% !important;
+    margin-top: 1% !important;
+
+    background-color: white;
+    box-shadow: 2px;
+    border-color: rgb(211, 211, 211);
+    border-radius: 1.5%;
+    border-style: solid;
+    border-width: 1.5px;
+
+    padding-top: 3vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-bottom: 3vh;
   }
 
-  .navbar-brand{
-    margin: 0;
-    padding:  0 !important;
-    padding-right: 0.5rem !important;
+  .burning {
+    padding-left: 3%;
+    padding-right: 3%;
   }
 }

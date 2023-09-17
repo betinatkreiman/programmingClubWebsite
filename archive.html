@@ -1,169 +1,323 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <title>Archive</title>
+  <link href="css/temp.css" rel="stylesheet" type="text/css" />
+  <link href="css/temp2.css" rel="stylesheet" type="text/css" />
 
-  <!-- boostrap link  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/test.css">
+  <link href="css/navbar.css" rel="stylesheet" type="text/css" />
+  <link href="css/archive.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/jpg" href="imgs/f.jpg" />
 
-    <!-- Favicon Link -->
-    <link rel="shortcut icon" type="image/jpg" href="imgs/favicon.jpg"/>
+  <!-- font awespme -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
 </head>
-<body>
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light pl-5">
-        <a class="navbar-brand p-5 pt-3 pb-3" href="index.html">Newton North Programming Club</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body id="bodyBG" class="lightBG">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="resources.html"> Resources </a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link text-dark" href="archive.html"> Archive </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="faq.html"> FAQ </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="opportunities.html"> Opportunities </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about_us.html"> About Us </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <h1 class="h1 text-center p-3">Archive</h1>
-    </div>
-  
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="index.html">Newton North Programming Club</a>
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="projects">
+    <div class="bar collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="pages">
+        <ul class="navbar-nav mr-auto">
 
-    <div class="pb-3">
-      <figcaption class="welcome"> Welcome to the archives. Here you will find the Programming Clubs past projects.</figcaption>
-    </div>
+          <li class="nav-item ">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
 
+          <!--  dropID-->
+          <li id="dropdown" class="nav-item dropdown" data-bs-theme="light">
+            <a class="nav-link dropdown-toggle archiveDropDown" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Archive
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="archive.html">Gallery</a>
+              <a class="dropdown-item" href="archive/websites.html">Websites</a>
+              <a class="dropdown-item" href="archive/games.html">Games</a>
+              <a class="dropdown-item" href="archive/apps.html">Apps</a>
+            </div>
+          </li>
 
-    <div class="orbit project1 pb-3">
-      <div class="project-header">
-        <a href="https://apps.apple.com/us/app/orbit-a-space-game/id1353390547">Orbit App</a>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html"> FAQ </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="meet_the_team.html"> Meet the Team </a>
+          </li>
+        </ul>
       </div>
-      <div>
-        <img src="imgs/archiveImgs/orbit2.jpg" class="project-img" style="">
-        A neat scroller app game to play when class gets boring. We used swift/xcode and even made the music with garage band. It's now relased in the app store!
-      </div>
-    </div>
 
-    <div class="parking project2 pb-3">
-      <div class="project-header">
-        <a href="https://apps.apple.com/us/app/north-parking/id1439643706">North Parking Availability App</a>
-      </div>
-      <img src="imgs/archiveImgs/northParking.jpg" class="project-img north_parking" style="">
-      The Newton North Parking Availability App is a great way for students to find parking around the school. Most kids with their license are aware of the chaos and disorder there is around North when trying to find parking. The app is a great way to locate parking easily and quickly.
-    </div>
+      <div class="icons">
 
-    <div class="edexcampaign project1 pb-3">
-      <div class="project-header">
-        <a href="https://betinakreiman.github.io/edExCampaign/" target="_blank">Educational Excellence Campaign</a>
+        <a href="https://www.instagram.com/nnhsprogramming/" target=”_blank”> <i id="instagramID"
+            class="day icon follow fa-brands fa-instagram navIconf">
+          </i></a>
+
+        <a href="mailto:betina1620@gmail.com, isabelleosloan@gmail.com, eva.mescher@gmail.com, jennifer.yuzhen.li@gmail.com?cc=peloquina@newton.k12.ma.us"
+          target=”_blank”><i id="emailID" class="day icon fa-regular fa-envelope navIcon"></i></a>
+
+        <i id="switchID" class="day icon fa-regular fa-moon fa-fw" onclick="toggleTheme()"></i>
+
+
       </div>
-      <img src="imgs/archiveImgs/edexcampaign.jpg" class="project-img north_parking" style="">
-      This website is for the Educational Excellence Campaign that advocates for the raising of money for physics materials at the high school of Newton North. Using bootstrap, w3schools, GSAP, and many other prominent libraries of greatness, this website is both visually and mentally pleasing. We incentivize you to constantly reload the page and admire the beautiful animation. Have a wonderful day and do not forget to donate to the Educational Excellence Campaign!
+
     </div>
 
-    <div class="sustainablitySite project2 pb-3">
-      <div class="project-header">
-        <a href="https://sustainabilityinschool.com" target="_blank">Sustainability Club Website</a>
-      </div>
-      <img src="imgs/archiveImgs/Sustainability.png" class="project-img" style="">
-      The Newton North Sustainability Club is another group of wonderful humans that received a marvelous website from us. We strategically and mathematically calculated the rgb values of the colors on this site to complement the authentic design made by the sustainable dev. team. With forms that actually work and padding that pleases the eye, a smile is guaranteed to come to your face when you visit this website. Enjoy and be sustainable!
-    </div> 
 
-    <div class="frenchsite project1 pb-3">
-      <div class="project-header">
-        <a href="https://nnhsfrenchclub.com" target="_blank">French Club Website</a>
-      </div>
-      <img src="imgs/archiveImgs/french.jpg" class="project-img" style="">
-      The French Club is another club at North that the Programming Club made a site for! We used Bootstrap and brilliant thinking to artistically craft a pleasing and visually appealing site that greatly benefits the French Club. Au revoir!
+
+  </nav>
+
+
+  <!-- main content -->
+  <h1 class="archiveHeader">Archive</h1>
+  <!-- <div class="proj">
+    <div class="projects">
+      <a class="project_button" href="archive/websites.html">Websites</a>
+      <a class="project_button" href="archive/games.html">Games</a>
+      <a class="project_button" href="archive/apps.html">Apps</a>
+
     </div>
-
-    <div class="photographysite project2 pb-3">
-      <div class="project-header">
-        <a href="https://betinakreiman.github.io/photographyClubWebsite/" target="_blank">Photography Club Website</a>
-      </div>
-      <img src="imgs/archiveImgs/photography.jpg" class="project-img" style="">      The cinematic and innovative design applied to this high-end website was created after long nights of debugging and frustration. Intentionally articulated to display the first-rate creation of our dear partners, the Newton North High School Photography Club, this site provides our audience with a memorable experience, which is once in a lifetime. Using bootstrap and hard work, the Programming Club put together another beautiful website. We hope you thoroughly enjoy! 
-      
-    </div>
-
-    <div class="game project1 pb-3">
-      <div class="project-header">
-        2048 Python
-      </div>
-      <img src="imgs/archiveImgs/2048.jpg" class="project-img" style="">
-      One of our club members was inspired by the classic 2048 game that so many people play during class. They recreated the game using python and user input. It's a fun and entertaining way to spend class and is really cool because he made it himself. Demo of game coming soon!
-    </div>
-
-    <div class="oldWebsite project2 pb-3">
-      <div class="project-header">
-        <a href="https://nnhsprogramming.github.io/">Old Club Website</a>
-      </div>
-      After the pandemic, the club decided it wanted to entirely redo the website (taking ideas from the old website). We completely redid it trying to add the most useful information possible while still making it cool and modern.
-    </div>
-
-    <div class="podtalk project1 pb-3">
-      <div class="project-header">
-        Podtalk App
-      </div>
-      <img src="imgs/archiveImgs/podtalk.png" class="project-img" style="">
-      A poscast app for ios. They also had merch for sale to advertise for the club! Was published on app store and was a huge hit!
-    </div>
-
-    <div class="luaGame project2 pb-3">
-      <div class="project-header">
-        3D OOP Lua game
-      </div>
-      <img src="imgs/archiveImgs/luaGame.jpg" class="project-img" style="">
-      It's an action combat multiplayer fighting game. We used an object-oriented version of Lua and blender. The physics engine used was roblox studio. We took trigonometry we learned in class and applied it to the game's 3D space. The game is now released on the roblox platform. Over the course of the 9 month development period we hired various gfx artists and 3D modelers online to create art assets.
-    </div>
-
-    <div class="tigerInsider project1 pb-3">
-      <div class="project-header">
-        Website for TigerInsider
-      </div>
-      <img src="imgs/archiveImgs/tigerInsider.jpg" class="project-img" style="">
-      The Tiger Insider website uses the bootstrap CSS framework and silverstripe PHP for the backend. The club created some graphics to slap on the website and hired a gfx artist online to create an article placeholder banner. We like to use our own code, so bootstrap CSS was the optimal way in efficiency and creativity.
-    </div>
-
-    <div class="dreamherSite project2 pb-3">
-      <div class="project-header">
-        Dreamher Charity Website
-      </div>
-      The website made for Dreamher Charity was also created with bootstrap to create a better user-interface. This site was created for an organization. We hope to continue helping out charities near us by creating websites and games.
-    </div>
-  </div>
-
-<!--   <div class="test_animation">
-    <img src="https://images.unsplash.com/photo-1466695108335-44674aa2058b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80" alt="" style="width: 20%">
   </div> -->
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <!--gsap thing-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+
+
+
+
+
+
+  <!-- GALLERY!!! -->
+
+  <div class="">
+    <div class="container">
+      <h2 class="head">Club Pictures</h2>
+      <div class="gallery">
+
+        <!-- col1 -->
+        <div class="gCol">
+          <div class="imgDiv">
+            <img onmouseover="on_hover('sweatshirt')" onmouseout="off_hover('sweatshirt')"
+              src="imgs/main/sweatshirts.jpg" class="img" alt="sweatshirt" id="sweatshirt">
+            <p onmouseover="on_hover('sweatshirt')" id="sweatshirt_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('fontClub')" onmouseout="off_hover('fontClub')" src="imgs/main/fontClub.png"
+              class="img" alt="fontClub" id="fontClub">
+            <p onmouseover="on_hover('fontClub')" id="fontClub_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('potluck')" onmouseout="off_hover('potluck')" src="imgs/main/potluck.jpg"
+              class="img" alt="potluck" id="potluck">
+            <p onmouseover="on_hover('potluck')" id="potluck_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('mit')" onmouseout="off_hover('mit')" src="imgs/main/mit.jpg" class="img"
+              alt="mit" id="mit">
+            <p onmouseover="on_hover('mit')" id="mit_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('collaboration')" onmouseout="off_hover('collaboration')"
+              src="imgs/main/collaboration.jpg" class="img" alt="collaboration" id="collaboration">
+            <p onmouseover="on_hover('collaboration')" id="collaboration_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('women')" onmouseout="off_hover('women')" src="imgs/main/women.jpg" class="img"
+              alt="women" id="women">
+            <p onmouseover="on_hover('women')" id="women_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('point5')" onmouseout="off_hover('point5')" src="imgs/main/point5.jpg"
+              class="img" alt="point5" id="point5">
+            <p onmouseover="on_hover('point5')" id="point5_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('toby')" onmouseout="off_hover('toby')" src="imgs/main/toby.jpg" class="img"
+              alt="toby" id="toby">
+            <p onmouseover="on_hover('toby')" id="toby_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('sunset')" onmouseout="off_hover('sunset')" src="imgs/main/sunset.jpg"
+              class="img" alt="poster" id="sunset">
+            <p onmouseover="on_hover('sunset')" id="sunset_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('lunch_2022')" onmouseout="off_hover('lunch_2022')"
+              src="imgs/main/lunch_2022.jpg" class="img" alt="lunch_2022" id="lunch_2022">
+            <p onmouseover="on_hover('lunch_2022')" id="lunch_2022_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+        </div>
+
+        <!-- col2 -->
+        <div class="gCol">
+          <div class="imgDiv">
+            <img onmouseover="on_hover('tigerLogo')" onmouseout="off_hover('tigerLogo')" src="imgs/main/tigerLogo.jpg"
+              class="img" alt="tigerLogo" id="tigerLogo">
+            <p onmouseover="on_hover('tigerLogo')" id="tigerLogo_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('sunset_ppl')" onmouseout="off_hover('sunset_ppl')"
+              src="imgs/main/sunset_ppl.jpg" class="img" alt="sunset_ppl" id="sunset_ppl">
+            <p onmouseover="on_hover('sunset_ppl')" id="sunset_ppl_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('computerLogo')" onmouseout="off_hover('computerLogo')"
+              src="imgs/main/computerLogo.jpg" class="img" alt="computerLogo" id="computerLogo">
+            <p onmouseover="on_hover('computerLogo')" id="computerLogo_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('ligerbots')" onmouseout="off_hover('ligerbots')" src="imgs/main/ligerbots.jpg"
+              class="img" alt="ligerbots" id="ligerbots">
+            <p onmouseover="on_hover('ligerbots')" id="ligerbots_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('stepUpDay')" onmouseout="off_hover('stepUpDay')" src="imgs/main/stepUpDay.jpg"
+              class="img" alt="stepUpDay" id="stepUpDay">
+            <p onmouseover="on_hover('stepUpDay')" id="stepUpDay_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv" onclick="open_peloquin()">
+            <img onmouseover="on_hover('strava')" onmouseout="off_hover('strava')" src="imgs/main/strava.jpg"
+              class="img" alt="strava" id="strava">
+            <p onmouseover="on_hover('strava')" id="strava_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('club')" onmouseout="off_hover('club')" src="imgs/main/club.jpg" class="img"
+              alt="club" id="club">
+            <p onmouseover="on_hover('club')" id="club_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('logosamples')" onmouseout="off_hover('logosamples')"
+              src="imgs/main/logosamples.png" class="img" alt="logosamples" id="logosamples">
+            <p onmouseover="on_hover('logosamples')" id="logosamples_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('walking')" onmouseout="off_hover('walking')" src="imgs/main/walking.jpg"
+              class="img" alt="walking" id="walking">
+            <p onmouseover="on_hover('walking')" id="walking_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+
+        </div>
+
+        <!-- col3 -->
+        <div class="gCol">
+          <div class="imgDiv">
+            <img onmouseover="on_hover('step_up_2023')" onmouseout="off_hover('step_up_2023')"
+              src="imgs/main/step_up_2023.jpg" class="img" alt="step_up_2023" id="step_up_2023">
+            <p onmouseover="on_hover('step_up_2023')" id="step_up_2023_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('trivia')" onmouseout="off_hover('trivia')" src="imgs/main/trivia.jpg"
+              class="img" alt="trivia" id="trivia">
+            <p onmouseover="on_hover('trivia')" id="trivia_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('newspaper')" onmouseout="off_hover('newspaper')" src="imgs/main/newspaper.jpg"
+              class="img" alt="newspaper" id="newspaper">
+            <p onmouseover="on_hover('newspaper')" id="newspaper_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('zoom')" onmouseout="off_hover('zoom')" src="imgs/main/zoom.jpg" class="img"
+              alt="zoom" id="zoom">
+            <p onmouseover="on_hover('zoom')" id="zoom_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('veer')" onmouseout="off_hover('veer')" src="imgs/main/veer.jpg" class="img"
+              alt="veer" id="veer">
+            <p onmouseover="on_hover('veer')" id="veer_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('poster')" onmouseout="off_hover('poster')" src="imgs/main/poster.jpg"
+              class="img" alt="poster" id="poster">
+            <p onmouseover="on_hover('poster')" id="poster_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('computer2')" onmouseout="off_hover('computer2')" src="imgs/main/computer2.jpg"
+              class="img" alt="computer2" id="computer2">
+            <p onmouseover="on_hover('computer2')" id="computer2_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('work')" onmouseout="off_hover('work')" src="imgs/main/work.jpg" class="img"
+              alt="work" id="work">
+            <p onmouseover="on_hover('work')" id="work_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+          <div class="imgDiv">
+            <img onmouseover="on_hover('step_up_2022')" onmouseout="off_hover('step_up_2022')"
+              src="imgs/main/step_up_2022.jpg" class="img" alt="step_up_2022" id="step_up_2022">
+            <p onmouseover="on_hover('step_up_2022')" id="step_up_2022_cap" style="opacity:0%" class="centered"></p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
   <script src="js/archive.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+
+  <!--GSap Animationnnns whooooohooooooo-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+  <!-- bootstrap + hamburger!!!! -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>

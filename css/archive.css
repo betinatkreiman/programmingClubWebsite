@@ -1,56 +1,117 @@
-body {
-  text-align: center;
-  background-image: url("../imgs/archiveImgs/greyBackground.jpg");
-  background-repeat: no-repeat;
-/*   background-color: rgb(244, 245, 246); */
-  background-attachment: fixed;
-  background-size: cover;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.welcome{
+.archiveHeader {
   text-align: center;
 }
 
-/* project styles */
-
-.projects {
-  text-align: left;
-  padding: 0px 20px 0px;
+a.link {
+  text-decoration: none;
 }
 
-.oldProjects {
-  font-size: 25px;
-  text-align: left;
-}
-.project-img {
-  width: 13vw;
-  float: right;
-  padding: 5px;
+.container {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+
 }
 
-.project-header {
-  font-size: 33px;
-}
-
-.projects {
-  padding: 0px 30% 0px;
-  font-size: 20px;
+.imgDiv {
+  display: relative;
 }
 
 
-@media only screen and (max-width: 425px){
-  .navbar{
-    display: block !important;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.imgDesc {
+  display: absolute;
+}
+
+.imageDiv {
+  display: absolute;
+}
+
+.yup {
+  position: relative;
+}
+
+.img {
+  width: 100% !important;
+  margin-bottom: 5%;
+  display: absolute;
+}
+
+.container .gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gCol {
+  /* display: flex; */
+  flex-direction: column;
+  width: 32.5%;
+}
+
+
+
+.imgDiv {
+  position: relative;
+  text-align: center;
+}
+
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:100%;
+}
+
+.proj {
+  text-align: center;
+}
+
+.project_button {
+  background-color: white;
+  display: inline-block;
+  border-radius: 45%;
+  padding: 0.8%;
+  text-decoration: none;
+  margin: 5px;
+  color: rgb(47, 47, 51);
+  /* width: max-content; */
+}
+
+
+/* sizing */
+
+@media only screen and (max-width: 1200px) {
+  .gCol {
+    /* border-style: solid; */
+    width: 48% !important;
+    height: 540px;
+    padding: 0;
+    float: left;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
   }
-  .nav{
-    display: flex;
-  }
+}
 
-  .navbar-brand{
-    margin: 0;
-    padding:  0 !important;
-    padding-right: 0.5rem !important;
+@media only screen and (max-width: 700px) {
+  .gCol {
+    /* border-style: solid; */
+    width: 100% !important;
+    height: 540px;
+    padding: 0;
+    float: left;
   }
 }
