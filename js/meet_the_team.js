@@ -83,12 +83,17 @@ var member = [{
 {
   "name": "Audrey Sanger",
   "image": "../imgs/meet_the_team/audrey.jpg",
-  "blurb": "Hi I’m Audrey! I don’t know much about programming or websites, but I think that programming club is the best place to start! I’ve had so much fun learning from those around me, and I am excited to make some programming club memories! I am also part of improv club. "
+  "blurb": "Hi I’m Audrey! I don’t know much about programming or websites, but I think that programming club is the best place to start! I’ve had so much fun learning from those around me, and I am excited to make some programming club memories!"
 },
 {
   "name": "Veronica Gordivsky",
   "image": "../imgs/meet_the_team/smiley.jpg",
   "blurb": "Hi! I want to learn more about programming, and I love robotics! I enjoy drawing and needle felting in my free time, and I have a pet bird named Stitch. My favorite color is yellow, and my favorite food is sushi."
+},
+{
+  "name": "Isabelle Sloan",
+  "image": "../imgs/meet_the_team/isabelle.jpg",
+  "blurb": "Hi! I’m Isabelle Sloan and I am a Senior at NNHS. My favorite thing to do is Nordic Ski and I love the winter! I’ve been interested in programming since I learned how to use google sheets, I’m still pretty much a beginner when it comes to computers but I’m always willing to learn! Come to programming club and teach me python please."
 },
 {
   "name": "Stanley Zeng",
@@ -181,10 +186,17 @@ var member = [{
   "blurb": "My name is Noah Finkelstein, and I'm a Senior at North this year (2021 - 2022). I like programming, although I'm only really good at Python (and a little bit of HTML), and I'm happy to be a part of programming club this year!"
 },
 {
-  "name": "",
-  "image": "../imgs/meet_the_team/smiley.jpg",
-  "blurb": ""
-},]
+  "name": "Becky Zhou",
+  "image": "../imgs/meet_the_team/becky.jpg",
+  "blurb": "Hi, my name is Becky. The programming club is so fun-- ive heard good reviews. I do a lot of stuff: I do math, I like to draw, I like to paint, I like to sew, I like to play tennis, I like to volunteer, I have a brother, I have a pet turtle. I woke up at 7:40 and I had oatmeal for breakfast. I put kodiak oatmeal with hot water. "
+}
+]
+
+// {
+//   "name": "",
+//   "image": "../imgs/meet_the_team/smiley.jpg",
+//   "blurb": ""
+// },
 
 // Change all button names to names
 for (let i = 0; i < member.length; i++) {
@@ -246,6 +258,32 @@ function open_peloquin_nav() {
 //   // }
 // }
 
+if (localStorage.getItem('dark')) {
+  var theme = document.getElementsByTagName('link')[1];
+  var theme_2 = document.getElementsByTagName('link')[0];
+
+  var insta = document.getElementById("instagramID");
+  var email = document.getElementById("emailID");
+  var switchID = document.getElementById("switchID");
+  var dropID = document.getElementsByClassName("dropdown-menu");
+  var color = document.getElementById("bodyBG");
+  var dropdown = document.getElementById("dropdown");
+
+  theme_2.setAttribute('href', 'css/darkMode/dMeet_the_team.css');
+  theme.setAttribute('href', 'css/darkMode/dNavbar.css');
+  insta.classList.remove("fa-instagram");
+  insta.classList.add("fa-square-instagram");
+  email.classList.remove("fa-regular");
+  email.classList.add("fa-solid");
+  switchID.classList.remove("fa-regular");
+  switchID.classList.remove("fa-moon");
+  switchID.classList.add("fa-sun");
+  switchID.classList.add("fa-solid");
+  color.classList.remove("lightBG");
+  color.classList.add("darkBG");
+  dropdown.setAttribute("data-bs-theme", "dark");
+}
+
 function toggleTheme() {
   var theme = document.getElementsByTagName('link')[1];
   var theme_2 = document.getElementsByTagName('link')[0];
@@ -257,6 +295,9 @@ function toggleTheme() {
   var color = document.getElementById("bodyBG");
 
   var dropdown = document.getElementById("dropdown");
+
+  localStorage.setItem('dark', theme_2.getAttribute('href') == 'css/temp.css');
+  console.log("HELLO!: ", localStorage.getItem('dark'));
 
   // Change the value of href attribute 
   // to change the css sheet.

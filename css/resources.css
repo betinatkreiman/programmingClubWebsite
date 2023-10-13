@@ -55,6 +55,19 @@
   margin-bottom: 2% !important;
 }
 
+/* 
+.resource:hover {
+  .linkNameLight {
+    color: blue;
+    cursor: pointer;
+  }
+} */
+
+
+.resource:hover .linkName {
+  color: rgb(53, 119, 245);
+}
+
 @media only screen and (max-width: 1200px) {
   .resource {
     /* border-style: solid; */
@@ -83,9 +96,10 @@
   }
 }
 
+/* 
 .resourceDisc {
-  /* text-align: justify; */
-}
+  text-align: justify;
+} */
 
 
 .resource a {
@@ -95,16 +109,26 @@
 .readMore {
   font-size: 1em;
   padding: 10 10 0 10px;
-  color: rgb(53,119,245);
+  color: rgb(53, 119, 245);
 }
+
+.readMore:hover {
+  color: rgb(63, 129, 255);
+}
+
 
 .linkName {
   font-size: 1.75em;
-  color: black;
+  /* color: black; */
   text-decoration: none;
   display: block;
   padding-bottom: 0.75vh;
 }
+
+/* .linkName:hover {
+  color: rgb(53, 119, 245);
+  cursor: pointer;
+} */
 
 .resourceImg {
   display: block;
@@ -132,9 +156,6 @@
   padding-bottom: 13vh;
 }
 
-.linkName:hover {
-  cursor: pointer;
-}
 
 .readMore:hover {
   cursor: pointer;

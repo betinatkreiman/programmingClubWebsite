@@ -68,12 +68,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: .5s ease;
 
 }
 
 
 .officerImg:hover {
   opacity: 0.5;
+  transition: .5s ease;
 
 }
 
@@ -175,19 +177,19 @@
 
 /* sizing stuff */
 
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) { */
 
-  /* 3 and 2 */
-  .officerCard {
+/* 3 and 2 */
+/* .officerCard {
     width: 28%;
   }
 }
-
-@media only screen and (max-width: 800px) {
+ */
+@media only screen and (max-width: 1006px) {
 
   /* 2 and 2 and 1*/
   .officerCard {
-    width: 43%;
+    width: 33%;
   }
 }
 

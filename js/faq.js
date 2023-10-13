@@ -22,6 +22,38 @@ function open_peloquin_nav() {
   alert("Unfortunately, this aspect of the site is not yet functioning, so we are transporting you to an inter-galactic marvel instead. Disfruta!");
 }
 
+console.log("JENNIFER!: ", localStorage.getItem('dark'));
+
+
+if(localStorage.getItem('dark') == true) {
+  console.log("JENNIFER!: ", localStorage.getItem('dark'));
+  console.log("WJUY!!!!!!!!!");
+  
+  var theme = document.getElementsByTagName('link')[1];
+  var theme_2 = document.getElementsByTagName('link')[0];
+  
+  var insta = document.getElementById("instagramID");
+  var email = document.getElementById("emailID");
+  var switchID = document.getElementById("switchID");
+  var dropID = document.getElementsByClassName("dropdown-menu");
+  var color = document.getElementById("bodyBG");
+  var dropdown = document.getElementById("dropdown");
+  
+  theme_2.setAttribute('href', 'css/darkMode/dFaq.css');
+  theme.setAttribute('href', 'css/darkMode/dNavbar.css');
+  insta.classList.remove("fa-instagram");
+  insta.classList.add("fa-square-instagram");
+  email.classList.remove("fa-regular");
+  email.classList.add("fa-solid");
+  switchID.classList.remove("fa-regular");
+  switchID.classList.remove("fa-moon");
+  switchID.classList.add("fa-sun");
+  switchID.classList.add("fa-solid");
+  color.classList.remove("lightBG");
+  color.classList.add("darkBG");
+  dropdown.setAttribute("data-bs-theme", "dark");
+}
+
 function toggleTheme() {
   var theme = document.getElementsByTagName('link')[1];
   var theme_2 = document.getElementsByTagName('link')[0];
@@ -34,6 +66,9 @@ function toggleTheme() {
 
   var dropdown = document.getElementById("dropdown");
 
+  localStorage.setItem('dark', theme_2.getAttribute('href') == 'css/temp.css');
+  console.log("HELLO!: ", localStorage.getItem('dark'));
+  
   // Change the value of href attribute 
   // to change the css sheet.
   if (theme_2.getAttribute('href') == 'css/temp.css') {

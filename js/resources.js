@@ -6,31 +6,42 @@ var arr = { 1: ".arr1", 2: ".arr2", 3: ".arr3", 4: ".arr4", 5: ".arr5", 6: ".arr
 
 var links = { 1: "https://replit.com/~", 2: "https://projecteuler.net/archives", 3: "https://leetcode.com/problemset/all/", 4: "https://www.w3schools.com/python/default.asp", 5: "https://www.codecademy.com/catalog/language/swift", 6: "https://www.w3schools.com/html/default.asp", 7: "https://www.newton.k12.ma.us/Page/49", 8: "https://github.com/", 9: "https://codewars.com/dashboard", 10: "https://nnhsprogramming.com", 11: "https://discord.gg/dZ4RVNRQEm/", 12: "https://www.tutorialspoint.com/execute_python_online.php" }
 
-//function to highlight link when you hover over resource
-function hover_resource(linkNumb) {
-  r = document.getElementById(dict[linkNumb])
-  r.style.color = "rgb(53, 119, 245)";
-}
+// var color = ["rgb(53, 119, 245)", "rgb(234, 142, 12)"];
+// var post_hover = ["black", "white"];
+// // orange : rgb(234, 142, 12);
+// var mode = 0;
+
+// // set color to white in dark mode (cheap way)
+// for (let i = 0; i < 12; i++) {
+//   r = document.getElementById(dict[i]);
+//   r.style.color = post_hover[mode];
+// }
+
+// function to highlight link when you hover over resource
+// function hover_resource(linkNumb) {
+//   r = document.getElementById(dict[linkNumb]);
+//   r.style.color = color[mode];
+
+// }
 
 function click_resource(linkiesNumb) {
-  r = links[linkiesNumb]
+  r = links[linkiesNumb];
   window.open(r);
 }
 
 function stop_hover(numb) {
-  r = document.getElementById(dict[numb])
-  r.style.color = "black";
+  r = document.getElementById(dict[numb]);
+  // r.style.color = post_hover[mode];
 }
 
 //function for animating the arrow on hover
 function animate_arrow(arrowNum) {
-  console.log("YO!!!!!!!")
-  classArrow = arr[arrowNum]
+  classArrow = arr[arrowNum];
   gsap.to(classArrow, { rotation: 0, x: 20, duration: 0.75 });
 }
 
 function animate_arrow_back(arrowNumb) {
-  classArrow = arr[arrowNumb]
+  classArrow = arr[arrowNumb];
   gsap.to(classArrow, { rotation: 0, x: -1, duration: 1 });
 }
 
@@ -44,6 +55,31 @@ function open_peloquin_nav() {
   alert("Unfortunately, this aspect of the site is not yet functioning, so we are transporting you to an inter-galactic marvel instead. Disfruta!");
 }
 
+if (localStorage.getItem('dark')) {
+  var theme = document.getElementsByTagName('link')[1];
+  var theme_2 = document.getElementsByTagName('link')[0];
+
+  var insta = document.getElementById("instagramID");
+  var email = document.getElementById("emailID");
+  var switchID = document.getElementById("switchID");
+  var dropID = document.getElementsByClassName("dropdown-menu");
+  var color = document.getElementById("bodyBG");
+  var dropdown = document.getElementById("dropdown");
+
+  theme_2.setAttribute('href', 'css/darkMode/dResources.css');
+  theme.setAttribute('href', 'css/darkMode/dNavbar.css');
+  insta.classList.remove("fa-instagram");
+  insta.classList.add("fa-square-instagram");
+  email.classList.remove("fa-regular");
+  email.classList.add("fa-solid");
+  switchID.classList.remove("fa-regular");
+  switchID.classList.remove("fa-moon");
+  switchID.classList.add("fa-sun");
+  switchID.classList.add("fa-solid");
+  color.classList.remove("lightBG");
+  color.classList.add("darkBG");
+  dropdown.setAttribute("data-bs-theme", "dark");
+}
 
 function toggleTheme() {
   var theme = document.getElementsByTagName('link')[1];
@@ -56,6 +92,11 @@ function toggleTheme() {
   var color = document.getElementById("bodyBG");
 
   var dropdown = document.getElementById("dropdown");
+
+
+
+  localStorage.setItem('dark', theme_2.getAttribute('href') == 'css/temp.css');
+  console.log("HELLO!: ", localStorage.getItem('dark'));
 
   // Change the value of href attribute 
   // to change the css sheet.
@@ -79,7 +120,14 @@ function toggleTheme() {
     color.classList.remove("lightBG");
     color.classList.add("darkBG");
 
+    // linkName.classList.remove("linkNameLight");
+    // linkName.classList.add("linkNameDark");
+
+
+
     dropdown.setAttribute("data-bs-theme", "dark")
+    mode = 1;
+
 
   } else {
     theme_2.setAttribute('href', 'css/temp.css');
@@ -100,7 +148,13 @@ function toggleTheme() {
     color.classList.remove("darkBG");
     color.classList.add("lightBG");
 
+    // linkName.classList.add("linkNameLight");
+    // linkName.classList.remove("linkNameDark");
+
     dropdown.setAttribute("data-bs-theme", "light")
+
+    mode = 0;
+
   }
 
 }
