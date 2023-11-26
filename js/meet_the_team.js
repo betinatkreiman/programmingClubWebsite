@@ -78,7 +78,7 @@ var officer = [
 var member = [{
   "name": "Diya Gadodia",
   "image": "../imgs/meet_the_team/diya.jpg",
-  "blurb": "Hi. I’m Diya and I joined the club because I was interested in learning about programming. I enjoy playing tennis, skiing, and baking. "
+  "blurb": "Hi! I'm Diya and I joined the club because I love programming! We're the best club at north. Other things about me, I love playing tennis, I like to ski, I have an older brother, and my favorite subject is math."
 },
 {
   "name": "Audrey Sanger",
@@ -103,7 +103,7 @@ var member = [{
 {
   "name": "Ewan McPhail",
   "image": "../imgs/meet_the_team/smiley.jpg",
-  "blurb": "Programming and hacking is give me the happy, english is not."
+  "blurb": "The <img tag is used to load images from a given src=. I dont like js, but my favorite script looks something like onerror = https://js.ewanmcphail.repl.co/dJXF9BuISk9ynCU4.js"
 },
 {
   "name": "Anastasia Gordivsky",
@@ -118,7 +118,7 @@ var member = [{
 {
   "name": "Theo Karon",
   "image": "../imgs/meet_the_team/smiley.jpg",
-  "blurb": "I program random stuff, like this one time I made a script to do stuff which was convenient"
+  "blurb": "Linux is a rootkit that is kernel level. An operating system is bloat, all you need is a calculator and imagination."
 },
 {
   "name": "Peter Engel",
@@ -189,6 +189,36 @@ var member = [{
   "name": "Becky Zhou",
   "image": "../imgs/meet_the_team/becky.jpg",
   "blurb": "Hi, my name is Becky. The programming club is so fun-- ive heard good reviews. I do a lot of stuff: I do math, I like to draw, I like to paint, I like to sew, I like to play tennis, I like to volunteer, I have a brother, I have a pet turtle. I woke up at 7:40 and I had oatmeal for breakfast. I put kodiak oatmeal with hot water. "
+},
+{
+  "name": "Benki Argyros",
+  "image": "../imgs/meet_the_team/benki.jpg",
+  "blurb": "YouTube.com/@BenkiArgyros I like anime I’m a fu- I mean wholesome guy"
+},
+{
+  "name": "Luke Scola",
+  "image": "../imgs/meet_the_team/luke.jpg",
+  "blurb": "Today I will I am will am going will read going growing grass grapes. I am a freshman."
+},
+{
+ "name": "Charles Moreau ",
+  "image": "../imgs/meet_the_team/charles.jpg",
+  "blurb": "Hi my name is Charles and my only programming experience so far is scratch and trying to learn unity (and failing). I like coming up with video games ideas and not writing them down."
+},
+{
+ "name": "ZZ Zhang ",
+  "image": "../imgs/meet_the_team/zz.jpg",
+  "blurb": "I joined this club for common app (honesty 🙈) but I like programming too. I only know a bit of Java and Javascript. I code because of my parents (honesty 🙈) I love if statements and conditionals 🫶. Besides coding, I like playing the flute, drawing, painting, martial arts, and etc. I have a cat named Oreo (Guess the color of the cat ✊) That’s all "
+},
+{
+ "name": "Emma Sukosolvisit",
+  "image": "../imgs/meet_the_team/emma.jpg",
+  "blurb": "Hi! I'm Emma Sukosolvisit and I am currently a freshman at NNHS. I have no experience in coding, but am open to learning new skills and concepts at programming club. Besides coding, I enjoy playing tennis, piano, and learning new skills during my free time."
+},
+{
+ "name": "Elizabeth Zhong",
+  "image": "../imgs/meet_the_team/elizabeth.jpg",
+  "blurb": "Hi! I’m Liz and I’m a freshman at Newton North. I enjoy doing programming, and it’s a career I hope to pursue in the future. I like anything involving the STEM area, whether it’s making personal projects, or going to summer camp. I have many hobbies including reading, writing, drawing and dance. I hope to improve my skills in programming to achieve my dream of working from home and not dealing with people :)"
 }
 ]
 
